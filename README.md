@@ -102,7 +102,7 @@ export default function() {
   });
 };
 ```
-### Success Run 1 CCU - fixed Timeout
+### Success Run 100 CCU (in single partition ~ 1 TPS) - fixed Timeout
 ```bash
 $ k6 run .bin/test-async.js
 
