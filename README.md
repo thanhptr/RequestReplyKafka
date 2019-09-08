@@ -93,10 +93,13 @@ export let options = {
 };
 
 export default function() {
-    let res = http.get("http://localhost:8181/request?value=1");
-    check(res, {
-        "OK": r => r.status === 200
-    });
+  let params = {
+    timeout: 10 * 60 * 1000
+  };  
+  let res = http.get("http://localhost:8181/request?value=1", params);
+  check(res, {
+      "OK": r => r.status === 200
+  });
 };
 ```
 ```bash
