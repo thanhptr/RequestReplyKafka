@@ -102,6 +102,45 @@ export default function() {
   });
 };
 ```
+### Success Run 1 CCU - fixed Timeout
+```bash
+$ k6 run .bin/test-async.js
+
+          /\      |‾‾|  /‾‾/  /‾/
+     /\  /  \     |  |_/  /  / /
+    /  \/    \    |      |  /  ‾‾\
+   /          \   |  |‾\  \ | (_) |
+  / __________ \  |__|  \__\ \___/ .io
+
+  execution: local
+     output: -
+     script: .bin/test-async.js
+
+    duration: -,    iterations: 100
+         vus: 100, max: 100
+
+    done [==========================================================] 100 / 100
+
+    ✓ OK
+
+    checks.....................: 100.00% ✓ 100   ✗ 0
+    data_received..............: 17 kB   171 B/s
+    data_sent..................: 9.5 kB  93 B/s
+    http_req_blocked...........: avg=4.36ms  min=340.1µs med=3.57ms  max=11.89ms p(90)=8.98ms  p(95)=10.84ms
+    http_req_connecting........: avg=4.18ms  min=264.6µs med=3.02ms  max=11.78ms p(90)=8.86ms  p(95)=10.79ms
+    http_req_duration..........: avg=51.32s  min=1.5s    med=51.33s  max=1m41s   p(90)=1m31s   p(95)=1m36s
+    http_req_receiving.........: avg=59.67µs min=31.39µs med=42.35µs max=269.8µs p(90)=95.08µs p(95)=115.95µs
+    http_req_sending...........: avg=436µs   min=39.4µs  med=187.2µs max=6.83ms  p(90)=1.04ms  p(95)=1.54ms
+    http_req_tls_handshaking...: avg=0s      min=0s      med=0s      max=0s      p(90)=0s      p(95)=0s
+    http_req_waiting...........: avg=51.32s  min=1.5s    med=51.33s  max=1m41s   p(90)=1m31s   p(95)=1m36s
+    http_reqs..................: 100     0.988587/s
+    iteration_duration.........: avg=51.32s  min=1.5s    med=51.34s  max=1m41s   p(90)=1m31s   p(95)=1m36s
+    iterations.................: 100     0.988587/s
+    vus........................: 100     min=100 max=100
+    vus_max....................: 100     min=100 max=100
+```
+
+### Failed Run 10 CCU
 ```bash
 $ k6 run .bin/test-async.js
 
