@@ -3,6 +3,7 @@ package com.gauravg.consumer;
 import com.gauravg.controller.RequestController;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.messaging.handler.annotation.SendTo;
@@ -21,6 +22,12 @@ public class ReplyingKafkaConsumer {
 	private static final Logger logger = LoggerFactory.getLogger(ReplyingKafkaConsumer.class);
 	private static final AtomicInteger counter = new AtomicInteger();
 
+	@Value("${server.nginx}")
+	private String serverNginx;
+
+	@Value("${server.port}")
+	private String serverPort;
+
 	@KafkaListener(topics = "${kafka.topic.request-topic}")
 	@SendTo
 	public Model listen(Model request) throws InterruptedException {
@@ -28,7 +35,7 @@ public class ReplyingKafkaConsumer {
 		final int replyId = counter.incrementAndGet();
 		request.setReply(replyId);
 
-		final String uri = "http://localhost:8181/backend?value=" + replyId;
+		final String uri = "http://localhost:" + (serverNginx == "1" ? "2000" : serverPort) + "/backend?value=" + replyId;
 
 		RestTemplate restTemplate = new RestTemplate();
 		try {

@@ -108,6 +108,7 @@ public class KafkaConfig {
 	@Bean
 	public KafkaMessageListenerContainer<String, Model> replyContainer(ConsumerFactory<String, Model> cf) {
 		ContainerProperties containerProperties = new ContainerProperties(requestReplyTopic);
+		containerProperties.setGroupId(consumerGroup + "-reply-" + new java.util.Random().nextInt());
 		return new KafkaMessageListenerContainer<>(cf, containerProperties);
 	}
 

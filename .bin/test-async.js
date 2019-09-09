@@ -2,44 +2,18 @@
 import { check } from 'k6';
 import http from 'k6/http';
 
-
-// SIMPLE PEAK
 export let options = {
-  vus: 100,
-  iterations: 100 * 10
+  // vus: 100,
+  // iterations: 100 * 10
+  vus: 10,
+  iterations: 10
 };
-
-// export let options = {
-//   stages: [
-//     // SUPER HIGH
-//     { target: 30, duration: "10s" },
-//     { target: 100, duration: "10s" },
-//     { target: 100, duration: "20s" },
-//     { target: 0, duration: "30s" },
-
-//     // // VERY HIGH
-//     // { target: 3, duration: "10s" },
-//     // { target: 10, duration: "10s" },
-//     // { target: 10, duration: "20s" },
-//     // { target: 0, duration: "30s" },
-
-//     // // HIGH
-//     // { target: 3, duration: "10s" },
-//     // { target: 6, duration: "10s" },
-//     // { target: 6, duration: "20s" },
-//     // { target: 0, duration: "20s" },
-
-//     // // NORMAL
-//     // { target: 3, duration: "10s" },
-//     // { target: 0, duration: "10s" },
-//   ]
-// };
 
 export default function() {
   let params = {
     timeout: 10 * 60 * 1000
   };  
-  let res = http.get("http://localhost:8181/request?value=1", params);
+  let res = http.get("http://localhost:2001/request?value=1", params);
   check(res, {
       "OK": r => r.status === 200
   });
