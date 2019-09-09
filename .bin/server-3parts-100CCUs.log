@@ -1,0 +1,644 @@
+"C:\Program Files\Java\jdk1.8.0_201\bin\java.exe" -XX:TieredStopAtLevel=1 -noverify -Dspring.output.ansi.enabled=always -Dcom.sun.management.jmxremote -Dspring.liveBeansView.mbeanDomain -Dspring.application.admin.enabled=true "-javaagent:D:\Program Files\JetBrains\IntelliJ IDEA 2018.3.6\lib\idea_rt.jar=51141:D:\Program Files\JetBrains\IntelliJ IDEA 2018.3.6\bin" -Dfile.encoding=UTF-8 -classpath "C:\Program Files\Java\jdk1.8.0_201\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\rt.jar;D:\git\RequestReplyKafka\target\classes;C:\Users\thanhpt24\.m2\repository\org\springframework\boot\spring-boot-starter-web\2.0.1.RELEASE\spring-boot-starter-web-2.0.1.RELEASE.jar;C:\Users\thanhpt24\.m2\repository\org\springframework\boot\spring-boot-starter\2.0.1.RELEASE\spring-boot-starter-2.0.1.RELEASE.jar;C:\Users\thanhpt24\.m2\repository\org\springframework\boot\spring-boot\2.0.1.RELEASE\spring-boot-2.0.1.RELEASE.jar;C:\Users\thanhpt24\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\2.0.1.RELEASE\spring-boot-autoconfigure-2.0.1.RELEASE.jar;C:\Users\thanhpt24\.m2\repository\org\springframework\boot\spring-boot-starter-logging\2.0.1.RELEASE\spring-boot-starter-logging-2.0.1.RELEASE.jar;C:\Users\thanhpt24\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\thanhpt24\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\thanhpt24\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.10.0\log4j-to-slf4j-2.10.0.jar;C:\Users\thanhpt24\.m2\repository\org\apache\logging\log4j\log4j-api\2.10.0\log4j-api-2.10.0.jar;C:\Users\thanhpt24\.m2\repository\org\slf4j\jul-to-slf4j\1.7.25\jul-to-slf4j-1.7.25.jar;C:\Users\thanhpt24\.m2\repository\javax\annotation\javax.annotation-api\1.3.2\javax.annotation-api-1.3.2.jar;C:\Users\thanhpt24\.m2\repository\org\yaml\snakeyaml\1.19\snakeyaml-1.19.jar;C:\Users\thanhpt24\.m2\repository\org\springframework\boot\spring-boot-starter-json\2.0.1.RELEASE\spring-boot-starter-json-2.0.1.RELEASE.jar;C:\Users\thanhpt24\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.9.5\jackson-databind-2.9.5.jar;C:\Users\thanhpt24\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar;C:\Users\thanhpt24\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.9.5\jackson-core-2.9.5.jar;C:\Users\thanhpt24\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.9.5\jackson-datatype-jdk8-2.9.5.jar;C:\Users\thanhpt24\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.9.5\jackson-datatype-jsr310-2.9.5.jar;C:\Users\thanhpt24\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.9.5\jackson-module-parameter-names-2.9.5.jar;C:\Users\thanhpt24\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\2.0.1.RELEASE\spring-boot-starter-tomcat-2.0.1.RELEASE.jar;C:\Users\thanhpt24\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\8.5.29\tomcat-embed-core-8.5.29.jar;C:\Users\thanhpt24\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\8.5.29\tomcat-embed-el-8.5.29.jar;C:\Users\thanhpt24\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\8.5.29\tomcat-embed-websocket-8.5.29.jar;C:\Users\thanhpt24\.m2\repository\org\hibernate\validator\hibernate-validator\6.0.9.Final\hibernate-validator-6.0.9.Final.jar;C:\Users\thanhpt24\.m2\repository\javax\validation\validation-api\2.0.1.Final\validation-api-2.0.1.Final.jar;C:\Users\thanhpt24\.m2\repository\org\jboss\logging\jboss-logging\3.3.2.Final\jboss-logging-3.3.2.Final.jar;C:\Users\thanhpt24\.m2\repository\com\fasterxml\classmate\1.3.4\classmate-1.3.4.jar;C:\Users\thanhpt24\.m2\repository\org\springframework\spring-web\5.0.5.RELEASE\spring-web-5.0.5.RELEASE.jar;C:\Users\thanhpt24\.m2\repository\org\springframework\spring-beans\5.0.5.RELEASE\spring-beans-5.0.5.RELEASE.jar;C:\Users\thanhpt24\.m2\repository\org\springframework\spring-webmvc\5.0.5.RELEASE\spring-webmvc-5.0.5.RELEASE.jar;C:\Users\thanhpt24\.m2\repository\org\springframework\spring-aop\5.0.5.RELEASE\spring-aop-5.0.5.RELEASE.jar;C:\Users\thanhpt24\.m2\repository\org\springframework\spring-expression\5.0.5.RELEASE\spring-expression-5.0.5.RELEASE.jar;C:\Users\thanhpt24\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\thanhpt24\.m2\repository\org\springframework\spring-core\5.0.5.RELEASE\spring-core-5.0.5.RELEASE.jar;C:\Users\thanhpt24\.m2\repository\org\springframework\spring-jcl\5.0.5.RELEASE\spring-jcl-5.0.5.RELEASE.jar;C:\Users\thanhpt24\.m2\repository\org\springframework\kafka\spring-kafka\2.1.5.RELEASE\spring-kafka-2.1.5.RELEASE.jar;C:\Users\thanhpt24\.m2\repository\org\springframework\spring-context\5.0.5.RELEASE\spring-context-5.0.5.RELEASE.jar;C:\Users\thanhpt24\.m2\repository\org\springframework\spring-messaging\5.0.5.RELEASE\spring-messaging-5.0.5.RELEASE.jar;C:\Users\thanhpt24\.m2\repository\org\springframework\spring-tx\5.0.5.RELEASE\spring-tx-5.0.5.RELEASE.jar;C:\Users\thanhpt24\.m2\repository\org\springframework\retry\spring-retry\1.2.2.RELEASE\spring-retry-1.2.2.RELEASE.jar;C:\Users\thanhpt24\.m2\repository\org\apache\kafka\kafka-clients\1.0.1\kafka-clients-1.0.1.jar;C:\Users\thanhpt24\.m2\repository\org\lz4\lz4-java\1.4\lz4-java-1.4.jar;C:\Users\thanhpt24\.m2\repository\org\xerial\snappy\snappy-java\1.1.4\snappy-java-1.1.4.jar" com.gauravg.demo.RequestReplyKafkaApplication
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.0.1.RELEASE)
+
+2019-09-09 15:20:34.734  INFO 22932 --- [           main] c.g.demo.RequestReplyKafkaApplication    : Starting RequestReplyKafkaApplication on VID-THANHPT24-L with PID 22932 (D:\git\RequestReplyKafka\target\classes started by thanhpt24 in D:\git\RequestReplyKafka)
+2019-09-09 15:20:34.738  INFO 22932 --- [           main] c.g.demo.RequestReplyKafkaApplication    : No active profile set, falling back to default profiles: default
+2019-09-09 15:20:34.801  INFO 22932 --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6646153: startup date [Mon Sep 09 15:20:34 ICT 2019]; root of context hierarchy
+2019-09-09 15:20:35.655  INFO 22932 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$3dacb9d2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-09 15:20:35.882  INFO 22932 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2019-09-09 15:20:35.900  INFO 22932 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-09 15:20:35.900  INFO 22932 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2019-09-09 15:20:35.904  INFO 22932 --- [ost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_201\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Program Files\Git\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Users\thanhpt24\AppData\Local\Google\Cloud SDK\google-cloud-sdk\platform\bundledpython;C:\Program Files\TortoiseGit\bin;D:\installs\.bin;D:\installs\oracle\instantclient_18_5;D:\installs\cmder;C:\Program Files\k6\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;D:\installs\java\apache-maven-3.6.1\bin;C:\Users\thanhpt24\AppData\Local\Microsoft\WindowsApps;C:\Users\thanhpt24\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\thanhpt24\AppData\Roaming\npm;C:\Users\thanhpt24\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;D:\Program Files\JetBrains\IntelliJ IDEA 2018.3.6\bin;C:\Users\thanhpt24\.dotnet\tools;.]
+2019-09-09 15:20:36.040  INFO 22932 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-09 15:20:36.041  INFO 22932 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1240 ms
+2019-09-09 15:20:36.219  INFO 22932 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-09-09 15:20:36.222  INFO 22932 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-09-09 15:20:36.222  INFO 22932 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-09-09 15:20:36.223  INFO 22932 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-09-09 15:20:36.223  INFO 22932 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-09-09 15:20:36.329  INFO 22932 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 
+2019-09-09 15:20:36.401  INFO 22932 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-09-09 15:20:36.595  INFO 22932 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6646153: startup date [Mon Sep 09 15:20:34 ICT 2019]; root of context hierarchy
+2019-09-09 15:20:36.642  INFO 22932 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/backend],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Integer> com.gauravg.controller.BackendController.action(java.lang.Integer) throws java.lang.InterruptedException
+2019-09-09 15:20:36.643  INFO 22932 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/request],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.gauravg.controller.RequestController.async(java.lang.Integer) throws java.lang.InterruptedException,java.util.concurrent.ExecutionException
+2019-09-09 15:20:36.645  INFO 22932 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-09-09 15:20:36.645  INFO 22932 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-09-09 15:20:36.670  INFO 22932 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-09-09 15:20:36.670  INFO 22932 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-09-09 15:20:36.845  INFO 22932 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-09-09 15:20:36.871  INFO 22932 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2019-09-09 15:20:36.885  INFO 22932 --- [           main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [vep-kafka-1.int.vinid.dev:9093, vep-kafka-2.int.vinid.dev:9093, vep-kafka-3.int.vinid.dev:9093]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = d2.checkout-ticket.confirm-request.t-loadtest0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = SSL
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = [hidden]
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = D:\git\kafkanet\ssl\checkout-ticket-clients.int.vinid.dev.jks
+	ssl.keystore.password = [hidden]
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = D:\git\kafkanet\ssl\kafka-truststore.jks
+	ssl.truststore.password = [hidden]
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2019-09-09 15:20:40.282  INFO 22932 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 1.0.1
+2019-09-09 15:20:40.282  INFO 22932 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : c0518aa65f25317e
+2019-09-09 15:20:40.285  INFO 22932 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 
+2019-09-09 15:20:40.289  INFO 22932 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 
+2019-09-09 15:20:40.289  INFO 22932 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483547
+2019-09-09 15:20:40.289  INFO 22932 --- [           main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [vep-kafka-1.int.vinid.dev:9093, vep-kafka-2.int.vinid.dev:9093, vep-kafka-3.int.vinid.dev:9093]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = d2.checkout-ticket.confirm-request.t-loadtest0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = SSL
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = [hidden]
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = D:\git\kafkanet\ssl\checkout-ticket-clients.int.vinid.dev.jks
+	ssl.keystore.password = [hidden]
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = D:\git\kafkanet\ssl\kafka-truststore.jks
+	ssl.truststore.password = [hidden]
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2019-09-09 15:20:40.474  INFO 22932 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 1.0.1
+2019-09-09 15:20:40.474  INFO 22932 --- [           main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : c0518aa65f25317e
+2019-09-09 15:20:40.474  INFO 22932 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 
+2019-09-09 15:20:40.497  INFO 22932 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path ''
+2019-09-09 15:20:40.500  INFO 22932 --- [           main] c.g.demo.RequestReplyKafkaApplication    : Started RequestReplyKafkaApplication in 6.247 seconds (JVM running for 10.756)
+2019-09-09 15:20:40.807  INFO 22932 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-2, groupId=d2.checkout-ticket.confirm-request.t-loadtest0] Discovered group coordinator vep-kafka-1.int.vinid.dev:9093 (id: 2147483646 rack: null)
+2019-09-09 15:20:40.810  INFO 22932 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-2, groupId=d2.checkout-ticket.confirm-request.t-loadtest0] Revoking previously assigned partitions []
+2019-09-09 15:20:40.810  INFO 22932 --- [ntainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions revoked: []
+2019-09-09 15:20:40.810  INFO 22932 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-2, groupId=d2.checkout-ticket.confirm-request.t-loadtest0] (Re-)joining group
+2019-09-09 15:20:41.455  INFO 22932 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-2, groupId=d2.checkout-ticket.confirm-request.t-loadtest0] Successfully joined group with generation 1
+2019-09-09 15:20:41.457  INFO 22932 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-2, groupId=d2.checkout-ticket.confirm-request.t-loadtest0] Setting newly assigned partitions [d2.checkout-ticket.confirm-request.t-2, d2.checkout-ticket.confirm-request.t-1, d2.checkout-ticket.confirm-request.t-0]
+2019-09-09 15:20:42.171  INFO 22932 --- [ntainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions assigned: [d2.checkout-ticket.confirm-request.t-2, d2.checkout-ticket.confirm-request.t-1, d2.checkout-ticket.confirm-request.t-0]
+2019-09-09 15:20:43.730  INFO 22932 --- [lyContainer-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-1, groupId=d2.checkout-ticket.confirm-request.t-loadtest0] Discovered group coordinator vep-kafka-1.int.vinid.dev:9093 (id: 2147483646 rack: null)
+2019-09-09 15:20:43.732  INFO 22932 --- [lyContainer-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-1, groupId=d2.checkout-ticket.confirm-request.t-loadtest0] Revoking previously assigned partitions []
+2019-09-09 15:20:43.732  INFO 22932 --- [lyContainer-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions revoked: []
+2019-09-09 15:20:43.732  INFO 22932 --- [lyContainer-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-1, groupId=d2.checkout-ticket.confirm-request.t-loadtest0] (Re-)joining group
+2019-09-09 15:20:44.587  INFO 22932 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-2, groupId=d2.checkout-ticket.confirm-request.t-loadtest0] Revoking previously assigned partitions [d2.checkout-ticket.confirm-request.t-2, d2.checkout-ticket.confirm-request.t-1, d2.checkout-ticket.confirm-request.t-0]
+2019-09-09 15:20:44.587  INFO 22932 --- [ntainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions revoked: [d2.checkout-ticket.confirm-request.t-2, d2.checkout-ticket.confirm-request.t-1, d2.checkout-ticket.confirm-request.t-0]
+2019-09-09 15:20:44.587  INFO 22932 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-2, groupId=d2.checkout-ticket.confirm-request.t-loadtest0] (Re-)joining group
+2019-09-09 15:20:45.358  INFO 22932 --- [lyContainer-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-1, groupId=d2.checkout-ticket.confirm-request.t-loadtest0] Successfully joined group with generation 2
+2019-09-09 15:20:45.359  INFO 22932 --- [lyContainer-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-1, groupId=d2.checkout-ticket.confirm-request.t-loadtest0] Setting newly assigned partitions [d2.checkout-ticket.confirm-reply.t-1, d2.checkout-ticket.confirm-reply.t-0, d2.checkout-ticket.confirm-reply.t-2]
+2019-09-09 15:20:45.361  INFO 22932 --- [lyContainer-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions assigned: [d2.checkout-ticket.confirm-reply.t-1, d2.checkout-ticket.confirm-reply.t-0, d2.checkout-ticket.confirm-reply.t-2]
+2019-09-09 15:20:45.361  INFO 22932 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : [Consumer clientId=consumer-2, groupId=d2.checkout-ticket.confirm-request.t-loadtest0] Successfully joined group with generation 2
+2019-09-09 15:20:45.361  INFO 22932 --- [ntainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-2, groupId=d2.checkout-ticket.confirm-request.t-loadtest0] Setting newly assigned partitions [d2.checkout-ticket.confirm-request.t-2, d2.checkout-ticket.confirm-request.t-1, d2.checkout-ticket.confirm-request.t-0]
+2019-09-09 15:20:45.410  INFO 22932 --- [ntainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions assigned: [d2.checkout-ticket.confirm-request.t-2, d2.checkout-ticket.confirm-request.t-1, d2.checkout-ticket.confirm-request.t-0]
+2019-09-09 15:21:16.256  INFO 22932 --- [io-8181-exec-15] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-09-09 15:21:16.256  INFO 22932 --- [io-8181-exec-15] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-09-09 15:21:16.290  INFO 22932 --- [io-8181-exec-15] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 33 ms
+2019-09-09 15:21:16.345  INFO 22932 --- [io-8181-exec-66] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [vep-kafka-1.int.vinid.dev:9093, vep-kafka-2.int.vinid.dev:9093, vep-kafka-3.int.vinid.dev:9093]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = SSL
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = [hidden]
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = D:\git\kafkanet\ssl\checkout-ticket-clients.int.vinid.dev.jks
+	ssl.keystore.password = [hidden]
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = D:\git\kafkanet\ssl\kafka-truststore.jks
+	ssl.truststore.password = [hidden]
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
+
+2019-09-09 15:21:16.475  INFO 22932 --- [io-8181-exec-66] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 1.0.1
+2019-09-09 15:21:16.476  INFO 22932 --- [io-8181-exec-66] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : c0518aa65f25317e
+2019-09-09 15:21:17.201  INFO 22932 --- [io-8181-exec-27] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=24, reply=null, backend=null, status=null} kafka_replyTopic:[B@59bd3d7a |kafka_replyPartition:[B@21b51452 |kafka_correlationId:[B@47feead8 |__TypeId__:[B@b058de0 |
+2019-09-09 15:21:17.201  INFO 22932 --- [io-8181-exec-77] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=32, reply=null, backend=null, status=null} kafka_replyTopic:[B@44adede4 |kafka_replyPartition:[B@1973efdf |kafka_correlationId:[B@6ef13afc |__TypeId__:[B@6b0ac7a8 |
+2019-09-09 15:21:17.201  INFO 22932 --- [io-8181-exec-85] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=35, reply=null, backend=null, status=null} kafka_replyTopic:[B@1dd061ea |kafka_replyPartition:[B@374d0a33 |kafka_correlationId:[B@38cc5f78 |__TypeId__:[B@41f42d21 |
+2019-09-09 15:21:17.201  INFO 22932 --- [io-8181-exec-40] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=15, reply=null, backend=null, status=null} kafka_replyTopic:[B@680f8edd |kafka_replyPartition:[B@7167f4f3 |kafka_correlationId:[B@5d5fc82a |__TypeId__:[B@782c92cd |
+2019-09-09 15:21:17.201  INFO 22932 --- [nio-8181-exec-5] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=13, reply=null, backend=null, status=null} kafka_replyTopic:[B@23086548 |kafka_replyPartition:[B@44ead83c |kafka_correlationId:[B@54c0663c |__TypeId__:[B@77f709ab |
+2019-09-09 15:21:17.201  INFO 22932 --- [io-8181-exec-24] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=86, reply=null, backend=null, status=null} kafka_replyTopic:[B@4a0fe2d2 |kafka_replyPartition:[B@62a74be2 |kafka_correlationId:[B@24f8b3f0 |__TypeId__:[B@554be79c |
+2019-09-09 15:21:17.201  INFO 22932 --- [io-8181-exec-30] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=76, reply=null, backend=null, status=null} kafka_replyTopic:[B@39635c38 |kafka_replyPartition:[B@2907c71a |kafka_correlationId:[B@60811194 |__TypeId__:[B@7f5cd3ce |
+2019-09-09 15:21:17.201  INFO 22932 --- [io-8181-exec-14] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=81, reply=null, backend=null, status=null} kafka_replyTopic:[B@41ba3623 |kafka_replyPartition:[B@5357367b |kafka_correlationId:[B@bdc5cc4 |__TypeId__:[B@2bbb18dd |
+2019-09-09 15:21:17.201  INFO 22932 --- [io-8181-exec-69] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=33, reply=null, backend=null, status=null} kafka_replyTopic:[B@6a9642ab |kafka_replyPartition:[B@3f2de3da |kafka_correlationId:[B@314d3b14 |__TypeId__:[B@57e8daec |
+2019-09-09 15:21:17.201  INFO 22932 --- [io-8181-exec-17] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=67, reply=null, backend=null, status=null} kafka_replyTopic:[B@778af4d8 |kafka_replyPartition:[B@658d19bf |kafka_correlationId:[B@150379b3 |__TypeId__:[B@4c02ad38 |
+2019-09-09 15:21:17.201  INFO 22932 --- [io-8181-exec-20] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=82, reply=null, backend=null, status=null} kafka_replyTopic:[B@1527b2b2 |kafka_replyPartition:[B@14815e70 |kafka_correlationId:[B@634d1e8f |__TypeId__:[B@26398f7d |
+2019-09-09 15:21:17.201  INFO 22932 --- [io-8181-exec-56] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=18, reply=null, backend=null, status=null} kafka_replyTopic:[B@26e92165 |kafka_replyPartition:[B@2d5a8825 |kafka_correlationId:[B@62d32338 |__TypeId__:[B@6c414f71 |
+2019-09-09 15:21:17.201  INFO 22932 --- [io-8181-exec-86] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=36, reply=null, backend=null, status=null} kafka_replyTopic:[B@648a9cab |kafka_replyPartition:[B@193d97ee |kafka_correlationId:[B@1c02cac0 |__TypeId__:[B@4870607d |
+2019-09-09 15:21:17.202  INFO 22932 --- [io-8181-exec-32] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=2, reply=null, backend=null, status=null} kafka_replyTopic:[B@2cf48fc2 |kafka_replyPartition:[B@6bd67cdd |kafka_correlationId:[B@45471a70 |__TypeId__:[B@3ff243a6 |
+2019-09-09 15:21:17.201  INFO 22932 --- [io-8181-exec-83] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=38, reply=null, backend=null, status=null} kafka_replyTopic:[B@735dc070 |kafka_replyPartition:[B@41b0cd72 |kafka_correlationId:[B@257b786f |__TypeId__:[B@5fdfad2c |
+2019-09-09 15:21:17.201  INFO 22932 --- [io-8181-exec-50] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=9, reply=null, backend=null, status=null} kafka_replyTopic:[B@4117aab7 |kafka_replyPartition:[B@72e86bf8 |kafka_correlationId:[B@6afe92c7 |__TypeId__:[B@6a2e60d3 |
+2019-09-09 15:21:17.202  INFO 22932 --- [io-8181-exec-37] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=19, reply=null, backend=null, status=null} kafka_replyTopic:[B@35d0335c |kafka_replyPartition:[B@2618ef41 |kafka_correlationId:[B@789c24aa |__TypeId__:[B@3f91e51b |
+2019-09-09 15:21:17.202  INFO 22932 --- [io-8181-exec-96] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=37, reply=null, backend=null, status=null} kafka_replyTopic:[B@7ffe99ca |kafka_replyPartition:[B@7a834a7d |kafka_correlationId:[B@3b1d3260 |__TypeId__:[B@230e97bd |
+2019-09-09 15:21:17.202  INFO 22932 --- [io-8181-exec-72] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=27, reply=null, backend=null, status=null} kafka_replyTopic:[B@3f1a1882 |kafka_replyPartition:[B@1d32e97d |kafka_correlationId:[B@47164913 |__TypeId__:[B@4cfb1904 |
+2019-09-09 15:21:17.202  INFO 22932 --- [io-8181-exec-34] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=80, reply=null, backend=null, status=null} kafka_replyTopic:[B@75db1854 |kafka_replyPartition:[B@40954e87 |kafka_correlationId:[B@44644990 |__TypeId__:[B@38c041ef |
+2019-09-09 15:21:17.201  INFO 22932 --- [io-8181-exec-46] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=42, reply=null, backend=null, status=null} kafka_replyTopic:[B@75975b5e |kafka_replyPartition:[B@559d5c4f |kafka_correlationId:[B@4faa7e85 |__TypeId__:[B@21114115 |
+2019-09-09 15:21:17.202  INFO 22932 --- [io-8181-exec-57] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=54, reply=null, backend=null, status=null} kafka_replyTopic:[B@3941b97b |kafka_replyPartition:[B@a1fda48 |kafka_correlationId:[B@5326f39d |__TypeId__:[B@6a846046 |
+2019-09-09 15:21:17.202  INFO 22932 --- [io-8181-exec-41] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=51, reply=null, backend=null, status=null} kafka_replyTopic:[B@68fc1e9a |kafka_replyPartition:[B@1829c98b |kafka_correlationId:[B@2fe0419c |__TypeId__:[B@6432c805 |
+2019-09-09 15:21:17.202  INFO 22932 --- [io-8181-exec-48] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=53, reply=null, backend=null, status=null} kafka_replyTopic:[B@7aace716 |kafka_replyPartition:[B@7fd0ac19 |kafka_correlationId:[B@4b1cde4b |__TypeId__:[B@78acbe9 |
+2019-09-09 15:21:17.202  INFO 22932 --- [io-8181-exec-90] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=44, reply=null, backend=null, status=null} kafka_replyTopic:[B@6a51bc7c |kafka_replyPartition:[B@5aba26c4 |kafka_correlationId:[B@23258a72 |__TypeId__:[B@552f53a3 |
+2019-09-09 15:21:17.202  INFO 22932 --- [io-8181-exec-66] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=8, reply=null, backend=null, status=null} kafka_replyTopic:[B@504ab17a |kafka_replyPartition:[B@ccac2b5 |kafka_correlationId:[B@3321cb74 |__TypeId__:[B@46b0e786 |
+2019-09-09 15:21:17.201  INFO 22932 --- [io-8181-exec-23] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=79, reply=null, backend=null, status=null} kafka_replyTopic:[B@2015c63c |kafka_replyPartition:[B@7e6abaa |kafka_correlationId:[B@160585f1 |__TypeId__:[B@7dcac053 |
+2019-09-09 15:21:17.201  INFO 22932 --- [io-8181-exec-89] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=95, reply=null, backend=null, status=null} kafka_replyTopic:[B@37a1b996 |kafka_replyPartition:[B@56523efc |kafka_correlationId:[B@425eaa1b |__TypeId__:[B@2f95a42b |
+2019-09-09 15:21:17.201  INFO 22932 --- [io-8181-exec-29] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=23, reply=null, backend=null, status=null} kafka_replyTopic:[B@18a6e7c0 |kafka_replyPartition:[B@da0fcdc |kafka_correlationId:[B@30d1bd93 |__TypeId__:[B@2c95b5d4 |
+2019-09-09 15:21:17.201  INFO 22932 --- [io-8181-exec-22] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=88, reply=null, backend=null, status=null} kafka_replyTopic:[B@16beba7d |kafka_replyPartition:[B@60c1b58c |kafka_correlationId:[B@4d6e3660 |__TypeId__:[B@717ef16a |
+2019-09-09 15:21:17.202  INFO 22932 --- [io-8181-exec-39] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=69, reply=null, backend=null, status=null} kafka_replyTopic:[B@23dcf1f3 |kafka_replyPartition:[B@401ec0ec |kafka_correlationId:[B@72abff3b |__TypeId__:[B@29228402 |
+2019-09-09 15:21:17.202  INFO 22932 --- [io-8181-exec-35] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=97, reply=null, backend=null, status=null} kafka_replyTopic:[B@3bfa4546 |kafka_replyPartition:[B@1ecbda75 |kafka_correlationId:[B@56dcb573 |__TypeId__:[B@560d35ef |
+2019-09-09 15:21:17.201  INFO 22932 --- [io-8181-exec-62] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=55, reply=null, backend=null, status=null} kafka_replyTopic:[B@37d1007b |kafka_replyPartition:[B@1b181d9c |kafka_correlationId:[B@3d835a4d |__TypeId__:[B@9a5bf5a |
+2019-09-09 15:21:17.202  INFO 22932 --- [nio-8181-exec-1] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=14, reply=null, backend=null, status=null} kafka_replyTopic:[B@4aa388e5 |kafka_replyPartition:[B@6ad9c9b7 |kafka_correlationId:[B@22785e71 |__TypeId__:[B@b1541e8 |
+2019-09-09 15:21:17.202  INFO 22932 --- [io-8181-exec-52] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=64, reply=null, backend=null, status=null} kafka_replyTopic:[B@7eb09765 |kafka_replyPartition:[B@1928c472 |kafka_correlationId:[B@3404ce76 |__TypeId__:[B@3718d6d6 |
+2019-09-09 15:21:17.201  INFO 22932 --- [io-8181-exec-88] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=87, reply=null, backend=null, status=null} kafka_replyTopic:[B@390ef998 |kafka_replyPartition:[B@4fdc887b |kafka_correlationId:[B@4fdd46f1 |__TypeId__:[B@3730123e |
+2019-09-09 15:21:17.201  INFO 22932 --- [nio-8181-exec-8] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=26, reply=null, backend=null, status=null} kafka_replyTopic:[B@1863b40a |kafka_replyPartition:[B@5a163f5a |kafka_correlationId:[B@7f8ced96 |__TypeId__:[B@7231e32f |
+2019-09-09 15:21:17.202  INFO 22932 --- [nio-8181-exec-4] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=72, reply=null, backend=null, status=null} kafka_replyTopic:[B@52e11de3 |kafka_replyPartition:[B@679d34cd |kafka_correlationId:[B@2f822c09 |__TypeId__:[B@3be907fa |
+2019-09-09 15:21:17.201  INFO 22932 --- [io-8181-exec-45] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=22, reply=null, backend=null, status=null} kafka_replyTopic:[B@309e7d2b |kafka_replyPartition:[B@6b95dd52 |kafka_correlationId:[B@1642cc7 |__TypeId__:[B@1385d21a |
+2019-09-09 15:21:17.201  INFO 22932 --- [io-8181-exec-65] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=43, reply=null, backend=null, status=null} kafka_replyTopic:[B@5dfd32b4 |kafka_replyPartition:[B@3f48ff54 |kafka_correlationId:[B@cf405ce |__TypeId__:[B@68da4717 |
+2019-09-09 15:21:17.202  INFO 22932 --- [io-8181-exec-12] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=34, reply=null, backend=null, status=null} kafka_replyTopic:[B@325abc3c |kafka_replyPartition:[B@4015bfa0 |kafka_correlationId:[B@5a6abd20 |__TypeId__:[B@4e022f90 |
+2019-09-09 15:21:17.202  INFO 22932 --- [io-8181-exec-26] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=50, reply=null, backend=null, status=null} kafka_replyTopic:[B@6a212579 |kafka_replyPartition:[B@11ad5239 |kafka_correlationId:[B@5b010971 |__TypeId__:[B@6967208e |
+2019-09-09 15:21:17.202  INFO 22932 --- [nio-8181-exec-7] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=91, reply=null, backend=null, status=null} kafka_replyTopic:[B@63cccdc0 |kafka_replyPartition:[B@1bfa9a9d |kafka_correlationId:[B@3364f269 |__TypeId__:[B@57ff5648 |
+2019-09-09 15:21:17.202  INFO 22932 --- [io-8181-exec-38] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=74, reply=null, backend=null, status=null} kafka_replyTopic:[B@20516fa |kafka_replyPartition:[B@135cc5c5 |kafka_correlationId:[B@22d8aa9a |__TypeId__:[B@100bbad8 |
+2019-09-09 15:21:17.202  INFO 22932 --- [io-8181-exec-61] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=68, reply=null, backend=null, status=null} kafka_replyTopic:[B@67519f85 |kafka_replyPartition:[B@2c1b89b5 |kafka_correlationId:[B@2b2b5192 |__TypeId__:[B@60724891 |
+2019-09-09 15:21:17.202  INFO 22932 --- [io-8181-exec-82] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=66, reply=null, backend=null, status=null} kafka_replyTopic:[B@74bd6923 |kafka_replyPartition:[B@797fd1b2 |kafka_correlationId:[B@cd57dee |__TypeId__:[B@28d2649b |
+2019-09-09 15:21:17.202  INFO 22932 --- [io-8181-exec-15] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=52, reply=null, backend=null, status=null} kafka_replyTopic:[B@69ed8b4 |kafka_replyPartition:[B@1b294bf0 |kafka_correlationId:[B@1def5ddd |__TypeId__:[B@1bd3c72a |
+2019-09-09 15:21:17.202  INFO 22932 --- [io-8181-exec-74] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=28, reply=null, backend=null, status=null} kafka_replyTopic:[B@153bdca6 |kafka_replyPartition:[B@4ef0962b |kafka_correlationId:[B@44fa25e3 |__TypeId__:[B@546a5b0d |
+2019-09-09 15:21:17.202  INFO 22932 --- [io-8181-exec-54] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=40, reply=null, backend=null, status=null} kafka_replyTopic:[B@65f05f8c |kafka_replyPartition:[B@683dd8c4 |kafka_correlationId:[B@74da2009 |__TypeId__:[B@7705fbba |
+2019-09-09 15:21:17.201  INFO 22932 --- [io-8181-exec-94] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=93, reply=null, backend=null, status=null} kafka_replyTopic:[B@1d0e56b |kafka_replyPartition:[B@30c935b6 |kafka_correlationId:[B@5085ef91 |__TypeId__:[B@54ad7f10 |
+2019-09-09 15:21:17.202  INFO 22932 --- [io-8181-exec-42] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=20, reply=null, backend=null, status=null} kafka_replyTopic:[B@4a2d8187 |kafka_replyPartition:[B@30512a48 |kafka_correlationId:[B@328cbb78 |__TypeId__:[B@6135b14a |
+2019-09-09 15:21:17.202  INFO 22932 --- [io-8181-exec-75] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=31, reply=null, backend=null, status=null} kafka_replyTopic:[B@3129bd51 |kafka_replyPartition:[B@7dfe1f19 |kafka_correlationId:[B@604c46c5 |__TypeId__:[B@17ceea79 |
+2019-09-09 15:21:17.202  INFO 22932 --- [io-8181-exec-70] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=25, reply=null, backend=null, status=null} kafka_replyTopic:[B@e9caa1d |kafka_replyPartition:[B@7d3a6822 |kafka_correlationId:[B@3fd84733 |__TypeId__:[B@594dbbf |
+2019-09-09 15:21:17.202  INFO 22932 --- [io-8181-exec-58] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=85, reply=null, backend=null, status=null} kafka_replyTopic:[B@1b527cd5 |kafka_replyPartition:[B@1464d6e2 |kafka_correlationId:[B@39563176 |__TypeId__:[B@17a0e1db |
+2019-09-09 15:21:17.202  INFO 22932 --- [io-8181-exec-78] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=75, reply=null, backend=null, status=null} kafka_replyTopic:[B@18b191c4 |kafka_replyPartition:[B@148d6dfb |kafka_correlationId:[B@29e34ff6 |__TypeId__:[B@6c35ed78 |
+2019-09-09 15:21:17.201  INFO 22932 --- [io-8181-exec-31] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=92, reply=null, backend=null, status=null} kafka_replyTopic:[B@6447ee00 |kafka_replyPartition:[B@7afc9f7c |kafka_correlationId:[B@ad49ba1 |__TypeId__:[B@213b1f1a |
+2019-09-09 15:21:17.203  INFO 22932 --- [io-8181-exec-19] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=57, reply=null, backend=null, status=null} kafka_replyTopic:[B@4859ef10 |kafka_replyPartition:[B@1e4e8e5b |kafka_correlationId:[B@5e7df692 |__TypeId__:[B@ef37582 |
+2019-09-09 15:21:17.204  INFO 22932 --- [io-8181-exec-93] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=59, reply=null, backend=null, status=null} kafka_replyTopic:[B@232a15e0 |kafka_replyPartition:[B@4257aa99 |kafka_correlationId:[B@5e4f8713 |__TypeId__:[B@1fb5b743 |
+2019-09-09 15:21:17.204  INFO 22932 --- [io-8181-exec-21] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=98, reply=null, backend=null, status=null} kafka_replyTopic:[B@66414bdb |kafka_replyPartition:[B@1640604 |kafka_correlationId:[B@3773c0e4 |__TypeId__:[B@57e66f8a |
+2019-09-09 15:21:17.204  INFO 22932 --- [io-8181-exec-67] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=56, reply=null, backend=null, status=null} kafka_replyTopic:[B@4a8e0fe |kafka_replyPartition:[B@5b8fd593 |kafka_correlationId:[B@55788a94 |__TypeId__:[B@266164a7 |
+2019-09-09 15:21:17.203  INFO 22932 --- [io-8181-exec-33] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=70, reply=null, backend=null, status=null} kafka_replyTopic:[B@6e870f86 |kafka_replyPartition:[B@ace26d7 |kafka_correlationId:[B@71104756 |__TypeId__:[B@23ae608d |
+2019-09-09 15:21:17.204  INFO 22932 --- [io-8181-exec-76] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=90, reply=null, backend=null, status=null} kafka_replyTopic:[B@5dceb764 |kafka_replyPartition:[B@4c795d36 |kafka_correlationId:[B@167aa35a |__TypeId__:[B@10d3f473 |
+2019-09-09 15:21:17.201  INFO 22932 --- [io-8181-exec-53] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=65, reply=null, backend=null, status=null} kafka_replyTopic:[B@6252bae8 |kafka_replyPartition:[B@52ed9166 |kafka_correlationId:[B@4fe967d8 |__TypeId__:[B@116ed934 |
+2019-09-09 15:21:17.203  INFO 22932 --- [io-8181-exec-49] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=39, reply=null, backend=null, status=null} kafka_replyTopic:[B@5e5efe10 |kafka_replyPartition:[B@31aaef9f |kafka_correlationId:[B@3951fe8a |__TypeId__:[B@13094d4a |
+2019-09-09 15:21:17.204  INFO 22932 --- [io-8181-exec-16] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=78, reply=null, backend=null, status=null} kafka_replyTopic:[B@24c05106 |kafka_replyPartition:[B@403b912a |kafka_correlationId:[B@3a708a16 |__TypeId__:[B@6e030dc |
+2019-09-09 15:21:17.203  INFO 22932 --- [nio-8181-exec-9] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=61, reply=null, backend=null, status=null} kafka_replyTopic:[B@7f536b7d |kafka_replyPartition:[B@1f02d61 |kafka_correlationId:[B@2137b0b3 |__TypeId__:[B@5b6a0bea |
+2019-09-09 15:21:17.204  INFO 22932 --- [io-8181-exec-64] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=62, reply=null, backend=null, status=null} kafka_replyTopic:[B@513172cf |kafka_replyPartition:[B@1392e4d9 |kafka_correlationId:[B@60aae587 |__TypeId__:[B@6be32d39 |
+2019-09-09 15:21:17.204  INFO 22932 --- [io-8181-exec-47] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=89, reply=null, backend=null, status=null} kafka_replyTopic:[B@30d68575 |kafka_replyPartition:[B@4b6dc15c |kafka_correlationId:[B@33133277 |__TypeId__:[B@30e10f46 |
+2019-09-09 15:21:17.203  INFO 22932 --- [io-8181-exec-13] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=12, reply=null, backend=null, status=null} kafka_replyTopic:[B@6fbe4786 |kafka_replyPartition:[B@3643bb80 |kafka_correlationId:[B@45461df3 |__TypeId__:[B@1d395a0b |
+2019-09-09 15:21:17.202  INFO 22932 --- [io-8181-exec-36] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=46, reply=null, backend=null, status=null} kafka_replyTopic:[B@2237c1f0 |kafka_replyPartition:[B@3037ae1a |kafka_correlationId:[B@57570736 |__TypeId__:[B@259721cd |
+2019-09-09 15:21:17.202  INFO 22932 --- [io-8181-exec-51] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=11, reply=null, backend=null, status=null} kafka_replyTopic:[B@da5fdba |kafka_replyPartition:[B@7b24df1e |kafka_correlationId:[B@5c7c9ac5 |__TypeId__:[B@1fcb2480 |
+2019-09-09 15:21:17.202  INFO 22932 --- [io-8181-exec-92] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=49, reply=null, backend=null, status=null} kafka_replyTopic:[B@c698b2b |kafka_replyPartition:[B@6601164e |kafka_correlationId:[B@4ae90d68 |__TypeId__:[B@23e0d0de |
+2019-09-09 15:21:17.203  INFO 22932 --- [o-8181-exec-100] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=77, reply=null, backend=null, status=null} kafka_replyTopic:[B@33ed7669 |kafka_replyPartition:[B@183dcb64 |kafka_correlationId:[B@24fa76ba |__TypeId__:[B@3eedd536 |
+2019-09-09 15:21:17.202  INFO 22932 --- [nio-8181-exec-3] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=10, reply=null, backend=null, status=null} kafka_replyTopic:[B@3517195d |kafka_replyPartition:[B@5b8eb4b5 |kafka_correlationId:[B@2861e68f |__TypeId__:[B@64de3e26 |
+2019-09-09 15:21:17.204  INFO 22932 --- [io-8181-exec-91] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=21, reply=null, backend=null, status=null} kafka_replyTopic:[B@790a3dea |kafka_replyPartition:[B@68f63480 |kafka_correlationId:[B@74561c47 |__TypeId__:[B@55093277 |
+2019-09-09 15:21:17.202  INFO 22932 --- [io-8181-exec-63] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=4, reply=null, backend=null, status=null} kafka_replyTopic:[B@777d3b5d |kafka_replyPartition:[B@327fabd6 |kafka_correlationId:[B@652c818c |__TypeId__:[B@387190d |
+2019-09-09 15:21:17.202  INFO 22932 --- [nio-8181-exec-6] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=63, reply=null, backend=null, status=null} kafka_replyTopic:[B@6fff6eef |kafka_replyPartition:[B@3ee3b210 |kafka_correlationId:[B@7d244451 |__TypeId__:[B@1418780a |
+2019-09-09 15:21:17.204  INFO 22932 --- [io-8181-exec-11] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=45, reply=null, backend=null, status=null} kafka_replyTopic:[B@610dbeb7 |kafka_replyPartition:[B@ecfd6f1 |kafka_correlationId:[B@f432b84 |__TypeId__:[B@767de50f |
+2019-09-09 15:21:17.202  INFO 22932 --- [io-8181-exec-81] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=47, reply=null, backend=null, status=null} kafka_replyTopic:[B@383f9d0b |kafka_replyPartition:[B@4f9f807 |kafka_correlationId:[B@69d36827 |__TypeId__:[B@101c474e |
+2019-09-09 15:21:17.202  INFO 22932 --- [io-8181-exec-97] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=7, reply=null, backend=null, status=null} kafka_replyTopic:[B@12502827 |kafka_replyPartition:[B@641a48c |kafka_correlationId:[B@7d408389 |__TypeId__:[B@780e39ed |
+2019-09-09 15:21:17.204  INFO 22932 --- [io-8181-exec-95] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=30, reply=null, backend=null, status=null} kafka_replyTopic:[B@48c9562e |kafka_replyPartition:[B@68255cd5 |kafka_correlationId:[B@511984ab |__TypeId__:[B@4e7dad81 |
+2019-09-09 15:21:17.202  INFO 22932 --- [io-8181-exec-43] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=16, reply=null, backend=null, status=null} kafka_replyTopic:[B@3bc866a6 |kafka_replyPartition:[B@7b7a0a15 |kafka_correlationId:[B@27c4dd5d |__TypeId__:[B@47038acf |
+2019-09-09 15:21:17.204  INFO 22932 --- [io-8181-exec-68] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=96, reply=null, backend=null, status=null} kafka_replyTopic:[B@2ef0fbb3 |kafka_replyPartition:[B@49ace64c |kafka_correlationId:[B@7f0ad9ed |__TypeId__:[B@551cef75 |
+2019-09-09 15:21:17.202  INFO 22932 --- [io-8181-exec-18] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=1, reply=null, backend=null, status=null} kafka_replyTopic:[B@1269394a |kafka_replyPartition:[B@71316e20 |kafka_correlationId:[B@46d46749 |__TypeId__:[B@4d5f1412 |
+2019-09-09 15:21:17.203  INFO 22932 --- [io-8181-exec-59] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=83, reply=null, backend=null, status=null} kafka_replyTopic:[B@ff84aba |kafka_replyPartition:[B@44ca2a9 |kafka_correlationId:[B@5e236870 |__TypeId__:[B@33905454 |
+2019-09-09 15:21:17.204  INFO 22932 --- [io-8181-exec-71] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=48, reply=null, backend=null, status=null} kafka_replyTopic:[B@4a4f00d2 |kafka_replyPartition:[B@13f551cb |kafka_correlationId:[B@1bd1851f |__TypeId__:[B@348d2d4 |
+2019-09-09 15:21:17.204  INFO 22932 --- [nio-8181-exec-2] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=71, reply=null, backend=null, status=null} kafka_replyTopic:[B@148e14da |kafka_replyPartition:[B@bf201 |kafka_correlationId:[B@5962d6be |__TypeId__:[B@6cae838c |
+2019-09-09 15:21:17.204  INFO 22932 --- [io-8181-exec-80] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=84, reply=null, backend=null, status=null} kafka_replyTopic:[B@7e7b4d31 |kafka_replyPartition:[B@2057a097 |kafka_correlationId:[B@6ca6154 |__TypeId__:[B@71232d0d |
+2019-09-09 15:21:17.203  INFO 22932 --- [o-8181-exec-101] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=99, reply=null, backend=null, status=null} kafka_replyTopic:[B@6d475c63 |kafka_replyPartition:[B@7deeae48 |kafka_correlationId:[B@dc64371 |__TypeId__:[B@31f878c5 |
+2019-09-09 15:21:17.204  INFO 22932 --- [io-8181-exec-25] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=94, reply=null, backend=null, status=null} kafka_replyTopic:[B@375af244 |kafka_replyPartition:[B@43a50f6d |kafka_correlationId:[B@4328c85e |__TypeId__:[B@4cf69fe0 |
+2019-09-09 15:21:17.204  INFO 22932 --- [io-8181-exec-79] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=60, reply=null, backend=null, status=null} kafka_replyTopic:[B@67d46570 |kafka_replyPartition:[B@1d39f8b1 |kafka_correlationId:[B@1fd837f0 |__TypeId__:[B@4cf00bd9 |
+2019-09-09 15:21:17.204  INFO 22932 --- [io-8181-exec-98] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=29, reply=null, backend=null, status=null} kafka_replyTopic:[B@55de5696 |kafka_replyPartition:[B@6560dd26 |kafka_correlationId:[B@4df4a81 |__TypeId__:[B@3ac398ba |
+2019-09-09 15:21:17.204  INFO 22932 --- [io-8181-exec-84] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=100, reply=null, backend=null, status=null} kafka_replyTopic:[B@3b80c45d |kafka_replyPartition:[B@3948dad |kafka_correlationId:[B@5d60e2a5 |__TypeId__:[B@1d1b6702 |
+2019-09-09 15:21:17.204  INFO 22932 --- [io-8181-exec-44] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=73, reply=null, backend=null, status=null} kafka_replyTopic:[B@11866483 |kafka_replyPartition:[B@5d37a7f8 |kafka_correlationId:[B@6bcfca01 |__TypeId__:[B@b9d86fa |
+2019-09-09 15:21:17.204  INFO 22932 --- [io-8181-exec-55] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=5, reply=null, backend=null, status=null} kafka_replyTopic:[B@b1e5395 |kafka_replyPartition:[B@32429e54 |kafka_correlationId:[B@2356c073 |__TypeId__:[B@69e1b89c |
+2019-09-09 15:21:17.203  INFO 22932 --- [io-8181-exec-60] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=3, reply=null, backend=null, status=null} kafka_replyTopic:[B@42d319c8 |kafka_replyPartition:[B@5f3f4c1a |kafka_correlationId:[B@6a1cd835 |__TypeId__:[B@68b3c250 |
+2019-09-09 15:21:17.204  INFO 22932 --- [io-8181-exec-99] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=17, reply=null, backend=null, status=null} kafka_replyTopic:[B@2fead6b5 |kafka_replyPartition:[B@1089cb97 |kafka_correlationId:[B@7e91f657 |__TypeId__:[B@2ca0981c |
+2019-09-09 15:21:17.204  INFO 22932 --- [io-8181-exec-28] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=41, reply=null, backend=null, status=null} kafka_replyTopic:[B@2ea0c54a |kafka_replyPartition:[B@108645be |kafka_correlationId:[B@72f5085e |__TypeId__:[B@1a98fc54 |
+2019-09-09 15:21:17.204  INFO 22932 --- [io-8181-exec-87] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=58, reply=null, backend=null, status=null} kafka_replyTopic:[B@39e9fa9 |kafka_replyPartition:[B@3f37ce44 |kafka_correlationId:[B@63d9ff9a |__TypeId__:[B@31067ae3 |
+2019-09-09 15:21:17.204  INFO 22932 --- [io-8181-exec-73] c.gauravg.controller.RequestController   : REQUEST-Started: Model{value=1, request=6, reply=null, backend=null, status=null} kafka_replyTopic:[B@1beeb0e2 |kafka_replyPartition:[B@37744594 |kafka_correlationId:[B@641861db |__TypeId__:[B@571241e8 |
+2019-09-09 15:21:18.324  INFO 22932 --- [o-8181-exec-102] c.gauravg.controller.BackendController   : BACKEND-OK[S1]: 1 -> 1
+2019-09-09 15:21:18.345  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=99, reply=1, backend=1, status=200}
+2019-09-09 15:21:18.474  INFO 22932 --- [o-8181-exec-101] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=99, reply=1, backend=1, status=200}
+2019-09-09 15:21:19.406  INFO 22932 --- [io-8181-exec-10] c.gauravg.controller.BackendController   : BACKEND-OK[S2]: 2 -> 2
+2019-09-09 15:21:19.409  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=3, reply=2, backend=2, status=200}
+2019-09-09 15:21:19.481  INFO 22932 --- [io-8181-exec-60] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=3, reply=2, backend=2, status=200}
+2019-09-09 15:21:20.415  INFO 22932 --- [o-8181-exec-102] c.gauravg.controller.BackendController   : BACKEND-OK[S3]: 3 -> 3
+2019-09-09 15:21:20.416  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=61, reply=3, backend=3, status=200}
+2019-09-09 15:21:20.486  INFO 22932 --- [nio-8181-exec-9] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=61, reply=3, backend=3, status=200}
+2019-09-09 15:21:21.419  INFO 22932 --- [o-8181-exec-101] c.gauravg.controller.BackendController   : BACKEND-OK[S1]: 4 -> 4
+2019-09-09 15:21:21.420  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=12, reply=4, backend=4, status=200}
+2019-09-09 15:21:21.489  INFO 22932 --- [io-8181-exec-13] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=12, reply=4, backend=4, status=200}
+2019-09-09 15:21:22.424  INFO 22932 --- [io-8181-exec-10] c.gauravg.controller.BackendController   : BACKEND-OK[S2]: 5 -> 5
+2019-09-09 15:21:22.425  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=77, reply=5, backend=5, status=200}
+2019-09-09 15:21:22.482  INFO 22932 --- [o-8181-exec-100] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=77, reply=5, backend=5, status=200}
+2019-09-09 15:21:23.430  INFO 22932 --- [io-8181-exec-60] c.gauravg.controller.BackendController   : BACKEND-OK[S3]: 6 -> 6
+2019-09-09 15:21:23.432  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=83, reply=6, backend=6, status=200}
+2019-09-09 15:21:23.484  INFO 22932 --- [io-8181-exec-59] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=83, reply=6, backend=6, status=200}
+2019-09-09 15:21:24.435  INFO 22932 --- [o-8181-exec-102] c.gauravg.controller.BackendController   : BACKEND-OK[S1]: 7 -> 7
+2019-09-09 15:21:24.436  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=57, reply=7, backend=7, status=200}
+2019-09-09 15:21:24.487  INFO 22932 --- [io-8181-exec-19] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=57, reply=7, backend=7, status=200}
+2019-09-09 15:21:25.439  INFO 22932 --- [nio-8181-exec-9] c.gauravg.controller.BackendController   : BACKEND-OK[S2]: 8 -> 8
+2019-09-09 15:21:25.440  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=48, reply=8, backend=8, status=200}
+2019-09-09 15:21:25.492  INFO 22932 --- [io-8181-exec-71] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=48, reply=8, backend=8, status=200}
+2019-09-09 15:21:26.443  INFO 22932 --- [o-8181-exec-101] c.gauravg.controller.BackendController   : BACKEND-OK[S3]: 9 -> 9
+2019-09-09 15:21:26.444  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=70, reply=9, backend=9, status=200}
+2019-09-09 15:21:26.509  INFO 22932 --- [io-8181-exec-33] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=70, reply=9, backend=9, status=200}
+2019-09-09 15:21:27.448  INFO 22932 --- [io-8181-exec-13] c.gauravg.controller.BackendController   : BACKEND-OK[S1]: 10 -> 10
+2019-09-09 15:21:27.449  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=56, reply=10, backend=10, status=200}
+2019-09-09 15:21:27.502  INFO 22932 --- [io-8181-exec-67] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=56, reply=10, backend=10, status=200}
+2019-09-09 15:21:28.453  INFO 22932 --- [io-8181-exec-10] c.gauravg.controller.BackendController   : BACKEND-OK[S2]: 11 -> 11
+2019-09-09 15:21:28.454  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=39, reply=11, backend=11, status=200}
+2019-09-09 15:21:28.507  INFO 22932 --- [io-8181-exec-49] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=39, reply=11, backend=11, status=200}
+2019-09-09 15:21:29.457  INFO 22932 --- [o-8181-exec-100] c.gauravg.controller.BackendController   : BACKEND-OK[S3]: 12 -> 12
+2019-09-09 15:21:29.458  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=6, reply=12, backend=12, status=200}
+2019-09-09 15:21:29.512  INFO 22932 --- [io-8181-exec-73] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=6, reply=12, backend=12, status=200}
+2019-09-09 15:21:30.462  INFO 22932 --- [io-8181-exec-60] c.gauravg.controller.BackendController   : BACKEND-OK[S1]: 13 -> 13
+2019-09-09 15:21:30.462  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=59, reply=13, backend=13, status=200}
+2019-09-09 15:21:30.517  INFO 22932 --- [io-8181-exec-93] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=59, reply=13, backend=13, status=200}
+2019-09-09 15:21:31.465  INFO 22932 --- [io-8181-exec-59] c.gauravg.controller.BackendController   : BACKEND-OK[S2]: 14 -> 14
+2019-09-09 15:21:31.466  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=84, reply=14, backend=14, status=200}
+2019-09-09 15:21:31.523  INFO 22932 --- [io-8181-exec-80] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=84, reply=14, backend=14, status=200}
+2019-09-09 15:21:32.470  INFO 22932 --- [o-8181-exec-102] c.gauravg.controller.BackendController   : BACKEND-OK[S3]: 15 -> 15
+2019-09-09 15:21:32.471  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=98, reply=15, backend=15, status=200}
+2019-09-09 15:21:32.522  INFO 22932 --- [io-8181-exec-21] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=98, reply=15, backend=15, status=200}
+2019-09-09 15:21:33.475  INFO 22932 --- [io-8181-exec-19] c.gauravg.controller.BackendController   : BACKEND-OK[S1]: 16 -> 16
+2019-09-09 15:21:33.476  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=90, reply=16, backend=16, status=200}
+2019-09-09 15:21:33.529  INFO 22932 --- [io-8181-exec-76] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=90, reply=16, backend=16, status=200}
+2019-09-09 15:21:34.479  INFO 22932 --- [nio-8181-exec-9] c.gauravg.controller.BackendController   : BACKEND-OK[S2]: 17 -> 17
+2019-09-09 15:21:34.480  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=60, reply=17, backend=17, status=200}
+2019-09-09 15:21:34.552  INFO 22932 --- [io-8181-exec-79] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=60, reply=17, backend=17, status=200}
+2019-09-09 15:21:35.482  INFO 22932 --- [io-8181-exec-71] c.gauravg.controller.BackendController   : BACKEND-OK[S3]: 18 -> 18
+2019-09-09 15:21:35.483  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=78, reply=18, backend=18, status=200}
+2019-09-09 15:21:35.535  INFO 22932 --- [io-8181-exec-16] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=78, reply=18, backend=18, status=200}
+2019-09-09 15:21:36.485  INFO 22932 --- [o-8181-exec-101] c.gauravg.controller.BackendController   : BACKEND-OK[S1]: 19 -> 19
+2019-09-09 15:21:36.486  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=71, reply=19, backend=19, status=200}
+2019-09-09 15:21:36.538  INFO 22932 --- [nio-8181-exec-2] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=71, reply=19, backend=19, status=200}
+2019-09-09 15:21:37.489  INFO 22932 --- [io-8181-exec-33] c.gauravg.controller.BackendController   : BACKEND-OK[S2]: 20 -> 20
+2019-09-09 15:21:37.490  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=62, reply=20, backend=20, status=200}
+2019-09-09 15:21:37.542  INFO 22932 --- [io-8181-exec-64] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=62, reply=20, backend=20, status=200}
+2019-09-09 15:21:38.494  INFO 22932 --- [io-8181-exec-13] c.gauravg.controller.BackendController   : BACKEND-OK[S3]: 21 -> 21
+2019-09-09 15:21:38.496  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=58, reply=21, backend=21, status=200}
+2019-09-09 15:21:38.549  INFO 22932 --- [io-8181-exec-87] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=58, reply=21, backend=21, status=200}
+2019-09-09 15:21:39.499  INFO 22932 --- [io-8181-exec-67] c.gauravg.controller.BackendController   : BACKEND-OK[S1]: 22 -> 22
+2019-09-09 15:21:39.500  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=96, reply=22, backend=22, status=200}
+2019-09-09 15:21:39.557  INFO 22932 --- [io-8181-exec-68] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=96, reply=22, backend=22, status=200}
+2019-09-09 15:21:40.503  INFO 22932 --- [io-8181-exec-10] c.gauravg.controller.BackendController   : BACKEND-OK[S2]: 23 -> 23
+2019-09-09 15:21:40.504  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=100, reply=23, backend=23, status=200}
+2019-09-09 15:21:40.556  INFO 22932 --- [io-8181-exec-84] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=100, reply=23, backend=23, status=200}
+2019-09-09 15:21:41.506  INFO 22932 --- [io-8181-exec-49] c.gauravg.controller.BackendController   : BACKEND-OK[S3]: 24 -> 24
+2019-09-09 15:21:41.507  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=89, reply=24, backend=24, status=200}
+2019-09-09 15:21:41.559  INFO 22932 --- [io-8181-exec-47] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=89, reply=24, backend=24, status=200}
+2019-09-09 15:21:42.510  INFO 22932 --- [o-8181-exec-100] c.gauravg.controller.BackendController   : BACKEND-OK[S1]: 25 -> 25
+2019-09-09 15:21:42.510  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=41, reply=25, backend=25, status=200}
+2019-09-09 15:21:42.562  INFO 22932 --- [io-8181-exec-28] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=41, reply=25, backend=25, status=200}
+2019-09-09 15:21:43.514  INFO 22932 --- [io-8181-exec-73] c.gauravg.controller.BackendController   : BACKEND-OK[S2]: 26 -> 26
+2019-09-09 15:21:43.515  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=5, reply=26, backend=26, status=200}
+2019-09-09 15:21:43.569  INFO 22932 --- [io-8181-exec-55] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=5, reply=26, backend=26, status=200}
+2019-09-09 15:21:44.520  INFO 22932 --- [io-8181-exec-60] c.gauravg.controller.BackendController   : BACKEND-OK[S3]: 27 -> 27
+2019-09-09 15:21:44.520  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=30, reply=27, backend=27, status=200}
+2019-09-09 15:21:44.574  INFO 22932 --- [io-8181-exec-95] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=30, reply=27, backend=27, status=200}
+2019-09-09 15:21:45.523  INFO 22932 --- [io-8181-exec-93] c.gauravg.controller.BackendController   : BACKEND-OK[S1]: 28 -> 28
+2019-09-09 15:21:45.524  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=17, reply=28, backend=28, status=200}
+2019-09-09 15:21:45.625  INFO 22932 --- [io-8181-exec-99] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=17, reply=28, backend=28, status=200}
+2019-09-09 15:21:46.528  INFO 22932 --- [io-8181-exec-59] c.gauravg.controller.BackendController   : BACKEND-OK[S2]: 29 -> 29
+2019-09-09 15:21:46.529  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=45, reply=29, backend=29, status=200}
+2019-09-09 15:21:46.581  INFO 22932 --- [io-8181-exec-11] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=45, reply=29, backend=29, status=200}
+2019-09-09 15:21:47.532  INFO 22932 --- [io-8181-exec-80] c.gauravg.controller.BackendController   : BACKEND-OK[S3]: 30 -> 30
+2019-09-09 15:21:47.533  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=21, reply=30, backend=30, status=200}
+2019-09-09 15:21:47.585  INFO 22932 --- [io-8181-exec-91] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=21, reply=30, backend=30, status=200}
+2019-09-09 15:21:48.539  INFO 22932 --- [o-8181-exec-102] c.gauravg.controller.BackendController   : BACKEND-OK[S1]: 31 -> 31
+2019-09-09 15:21:48.540  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=29, reply=31, backend=31, status=200}
+2019-09-09 15:21:48.591  INFO 22932 --- [io-8181-exec-98] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=29, reply=31, backend=31, status=200}
+2019-09-09 15:21:49.543  INFO 22932 --- [io-8181-exec-21] c.gauravg.controller.BackendController   : BACKEND-OK[S2]: 32 -> 32
+2019-09-09 15:21:49.544  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=94, reply=32, backend=32, status=200}
+2019-09-09 15:21:49.596  INFO 22932 --- [io-8181-exec-25] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=94, reply=32, backend=32, status=200}
+2019-09-09 15:21:50.547  INFO 22932 --- [io-8181-exec-19] c.gauravg.controller.BackendController   : BACKEND-OK[S3]: 33 -> 33
+2019-09-09 15:21:50.547  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=73, reply=33, backend=33, status=200}
+2019-09-09 15:21:50.668  INFO 22932 --- [io-8181-exec-44] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=73, reply=33, backend=33, status=200}
+2019-09-09 15:21:51.554  INFO 22932 --- [io-8181-exec-76] c.gauravg.controller.BackendController   : BACKEND-OK[S1]: 34 -> 34
+2019-09-09 15:21:51.555  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=95, reply=34, backend=34, status=200}
+2019-09-09 15:21:51.608  INFO 22932 --- [io-8181-exec-89] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=95, reply=34, backend=34, status=200}
+2019-09-09 15:21:52.558  INFO 22932 --- [nio-8181-exec-9] c.gauravg.controller.BackendController   : BACKEND-OK[S2]: 35 -> 35
+2019-09-09 15:21:52.559  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=86, reply=35, backend=35, status=200}
+2019-09-09 15:21:52.613  INFO 22932 --- [io-8181-exec-24] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=86, reply=35, backend=35, status=200}
+2019-09-09 15:21:53.564  INFO 22932 --- [io-8181-exec-79] c.gauravg.controller.BackendController   : BACKEND-OK[S3]: 36 -> 36
+2019-09-09 15:21:53.565  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=44, reply=36, backend=36, status=200}
+2019-09-09 15:21:53.622  INFO 22932 --- [io-8181-exec-90] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=44, reply=36, backend=36, status=200}
+2019-09-09 15:21:54.567  INFO 22932 --- [io-8181-exec-71] c.gauravg.controller.BackendController   : BACKEND-OK[S1]: 37 -> 37
+2019-09-09 15:21:54.568  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=24, reply=37, backend=37, status=200}
+2019-09-09 15:21:54.620  INFO 22932 --- [io-8181-exec-27] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=24, reply=37, backend=37, status=200}
+2019-09-09 15:21:55.571  INFO 22932 --- [io-8181-exec-16] c.gauravg.controller.BackendController   : BACKEND-OK[S2]: 38 -> 38
+2019-09-09 15:21:55.571  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=32, reply=38, backend=38, status=200}
+2019-09-09 15:21:55.624  INFO 22932 --- [io-8181-exec-77] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=32, reply=38, backend=38, status=200}
+2019-09-09 15:21:56.575  INFO 22932 --- [o-8181-exec-101] c.gauravg.controller.BackendController   : BACKEND-OK[S3]: 39 -> 39
+2019-09-09 15:21:56.576  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=55, reply=39, backend=39, status=200}
+2019-09-09 15:21:56.627  INFO 22932 --- [io-8181-exec-62] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=55, reply=39, backend=39, status=200}
+2019-09-09 15:21:57.578  INFO 22932 --- [nio-8181-exec-2] c.gauravg.controller.BackendController   : BACKEND-OK[S1]: 40 -> 40
+2019-09-09 15:21:57.579  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=72, reply=40, backend=40, status=200}
+2019-09-09 15:21:57.631  INFO 22932 --- [nio-8181-exec-4] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=72, reply=40, backend=40, status=200}
+2019-09-09 15:21:58.584  INFO 22932 --- [io-8181-exec-33] c.gauravg.controller.BackendController   : BACKEND-OK[S2]: 41 -> 41
+2019-09-09 15:21:58.585  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=8, reply=41, backend=41, status=200}
+2019-09-09 15:21:58.636  INFO 22932 --- [io-8181-exec-66] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=8, reply=41, backend=41, status=200}
+2019-09-09 15:21:59.587  INFO 22932 --- [io-8181-exec-64] c.gauravg.controller.BackendController   : BACKEND-OK[S3]: 42 -> 42
+2019-09-09 15:21:59.587  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=92, reply=42, backend=42, status=200}
+2019-09-09 15:21:59.641  INFO 22932 --- [io-8181-exec-31] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=92, reply=42, backend=42, status=200}
+2019-09-09 15:22:00.591  INFO 22932 --- [io-8181-exec-13] c.gauravg.controller.BackendController   : BACKEND-OK[S1]: 43 -> 43
+2019-09-09 15:22:00.592  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=10, reply=43, backend=43, status=200}
+2019-09-09 15:22:00.644  INFO 22932 --- [nio-8181-exec-3] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=10, reply=43, backend=43, status=200}
+2019-09-09 15:22:01.594  INFO 22932 --- [io-8181-exec-87] c.gauravg.controller.BackendController   : BACKEND-OK[S2]: 44 -> 44
+2019-09-09 15:22:01.595  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=23, reply=44, backend=44, status=200}
+2019-09-09 15:22:01.649  INFO 22932 --- [io-8181-exec-29] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=23, reply=44, backend=44, status=200}
+2019-09-09 15:22:02.598  INFO 22932 --- [io-8181-exec-67] c.gauravg.controller.BackendController   : BACKEND-OK[S3]: 45 -> 45
+2019-09-09 15:22:02.598  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=65, reply=45, backend=45, status=200}
+2019-09-09 15:22:02.649  INFO 22932 --- [io-8181-exec-53] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=65, reply=45, backend=45, status=200}
+2019-09-09 15:22:03.601  INFO 22932 --- [io-8181-exec-68] c.gauravg.controller.BackendController   : BACKEND-OK[S1]: 46 -> 46
+2019-09-09 15:22:03.602  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=42, reply=46, backend=46, status=200}
+2019-09-09 15:22:03.717  INFO 22932 --- [io-8181-exec-46] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=42, reply=46, backend=46, status=200}
+2019-09-09 15:22:04.606  INFO 22932 --- [io-8181-exec-10] c.gauravg.controller.BackendController   : BACKEND-OK[S2]: 47 -> 47
+2019-09-09 15:22:04.606  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=63, reply=47, backend=47, status=200}
+2019-09-09 15:22:04.660  INFO 22932 --- [nio-8181-exec-6] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=63, reply=47, backend=47, status=200}
+2019-09-09 15:22:05.610  INFO 22932 --- [io-8181-exec-84] c.gauravg.controller.BackendController   : BACKEND-OK[S3]: 48 -> 48
+2019-09-09 15:22:05.611  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=79, reply=48, backend=48, status=200}
+2019-09-09 15:22:05.665  INFO 22932 --- [io-8181-exec-23] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=79, reply=48, backend=48, status=200}
+2019-09-09 15:22:06.613  INFO 22932 --- [io-8181-exec-49] c.gauravg.controller.BackendController   : BACKEND-OK[S1]: 49 -> 49
+2019-09-09 15:22:06.614  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=93, reply=49, backend=49, status=200}
+2019-09-09 15:22:06.665  INFO 22932 --- [io-8181-exec-94] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=93, reply=49, backend=49, status=200}
+2019-09-09 15:22:07.617  INFO 22932 --- [io-8181-exec-47] c.gauravg.controller.BackendController   : BACKEND-OK[S2]: 50 -> 50
+2019-09-09 15:22:07.617  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=88, reply=50, backend=50, status=200}
+2019-09-09 15:22:07.669  INFO 22932 --- [io-8181-exec-22] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=88, reply=50, backend=50, status=200}
+2019-09-09 15:22:08.621  INFO 22932 --- [o-8181-exec-100] c.gauravg.controller.BackendController   : BACKEND-OK[S3]: 51 -> 51
+2019-09-09 15:22:08.622  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=1, reply=51, backend=51, status=200}
+2019-09-09 15:22:08.674  INFO 22932 --- [io-8181-exec-18] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=1, reply=51, backend=51, status=200}
+2019-09-09 15:22:09.627  INFO 22932 --- [io-8181-exec-28] c.gauravg.controller.BackendController   : BACKEND-OK[S1]: 52 -> 52
+2019-09-09 15:22:09.628  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=18, reply=52, backend=52, status=200}
+2019-09-09 15:22:09.680  INFO 22932 --- [io-8181-exec-56] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=18, reply=52, backend=52, status=200}
+2019-09-09 15:22:10.632  INFO 22932 --- [io-8181-exec-73] c.gauravg.controller.BackendController   : BACKEND-OK[S2]: 53 -> 53
+2019-09-09 15:22:10.632  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=16, reply=53, backend=53, status=200}
+2019-09-09 15:22:10.684  INFO 22932 --- [io-8181-exec-43] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=16, reply=53, backend=53, status=200}
+2019-09-09 15:22:11.636  INFO 22932 --- [io-8181-exec-55] c.gauravg.controller.BackendController   : BACKEND-OK[S3]: 54 -> 54
+2019-09-09 15:22:11.636  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=47, reply=54, backend=54, status=200}
+2019-09-09 15:22:11.690  INFO 22932 --- [io-8181-exec-81] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=47, reply=54, backend=54, status=200}
+2019-09-09 15:22:12.640  INFO 22932 --- [io-8181-exec-60] c.gauravg.controller.BackendController   : BACKEND-OK[S1]: 55 -> 55
+2019-09-09 15:22:12.640  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=49, reply=55, backend=55, status=200}
+2019-09-09 15:22:12.693  INFO 22932 --- [io-8181-exec-92] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=49, reply=55, backend=55, status=200}
+2019-09-09 15:22:13.644  INFO 22932 --- [io-8181-exec-95] c.gauravg.controller.BackendController   : BACKEND-OK[S2]: 56 -> 56
+2019-09-09 15:22:13.645  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=9, reply=56, backend=56, status=200}
+2019-09-09 15:22:13.697  INFO 22932 --- [io-8181-exec-50] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=9, reply=56, backend=56, status=200}
+2019-09-09 15:22:14.650  INFO 22932 --- [io-8181-exec-93] c.gauravg.controller.BackendController   : BACKEND-OK[S3]: 57 -> 57
+2019-09-09 15:22:14.651  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=38, reply=57, backend=57, status=200}
+2019-09-09 15:22:14.704  INFO 22932 --- [io-8181-exec-83] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=38, reply=57, backend=57, status=200}
+2019-09-09 15:22:15.655  INFO 22932 --- [io-8181-exec-99] c.gauravg.controller.BackendController   : BACKEND-OK[S1]: 58 -> 58
+2019-09-09 15:22:15.655  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=35, reply=58, backend=58, status=200}
+2019-09-09 15:22:15.707  INFO 22932 --- [io-8181-exec-85] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=35, reply=58, backend=58, status=200}
+2019-09-09 15:22:16.658  INFO 22932 --- [io-8181-exec-59] c.gauravg.controller.BackendController   : BACKEND-OK[S2]: 59 -> 59
+2019-09-09 15:22:16.659  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=13, reply=59, backend=59, status=200}
+2019-09-09 15:22:16.710  INFO 22932 --- [nio-8181-exec-5] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=13, reply=59, backend=59, status=200}
+2019-09-09 15:22:17.663  INFO 22932 --- [io-8181-exec-11] c.gauravg.controller.BackendController   : BACKEND-OK[S3]: 60 -> 60
+2019-09-09 15:22:17.663  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=87, reply=60, backend=60, status=200}
+2019-09-09 15:22:17.716  INFO 22932 --- [io-8181-exec-88] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=87, reply=60, backend=60, status=200}
+2019-09-09 15:22:18.669  INFO 22932 --- [io-8181-exec-80] c.gauravg.controller.BackendController   : BACKEND-OK[S1]: 61 -> 61
+2019-09-09 15:22:18.670  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=15, reply=61, backend=61, status=200}
+2019-09-09 15:22:18.722  INFO 22932 --- [io-8181-exec-40] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=15, reply=61, backend=61, status=200}
+2019-09-09 15:22:19.674  INFO 22932 --- [io-8181-exec-91] c.gauravg.controller.BackendController   : BACKEND-OK[S2]: 62 -> 62
+2019-09-09 15:22:19.675  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=22, reply=62, backend=62, status=200}
+2019-09-09 15:22:19.727  INFO 22932 --- [io-8181-exec-45] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=22, reply=62, backend=62, status=200}
+2019-09-09 15:22:20.678  INFO 22932 --- [io-8181-exec-21] c.gauravg.controller.BackendController   : BACKEND-OK[S3]: 63 -> 63
+2019-09-09 15:22:20.678  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=52, reply=63, backend=63, status=200}
+2019-09-09 15:22:20.731  INFO 22932 --- [io-8181-exec-15] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=52, reply=63, backend=63, status=200}
+2019-09-09 15:22:21.682  INFO 22932 --- [io-8181-exec-19] c.gauravg.controller.BackendController   : BACKEND-OK[S1]: 64 -> 64
+2019-09-09 15:22:21.683  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=25, reply=64, backend=64, status=200}
+2019-09-09 15:22:21.734  INFO 22932 --- [io-8181-exec-70] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=25, reply=64, backend=64, status=200}
+2019-09-09 15:22:22.685  INFO 22932 --- [io-8181-exec-44] c.gauravg.controller.BackendController   : BACKEND-OK[S2]: 65 -> 65
+2019-09-09 15:22:22.686  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=82, reply=65, backend=65, status=200}
+2019-09-09 15:22:22.738  INFO 22932 --- [io-8181-exec-20] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=82, reply=65, backend=65, status=200}
+2019-09-09 15:22:23.689  INFO 22932 --- [io-8181-exec-89] c.gauravg.controller.BackendController   : BACKEND-OK[S3]: 66 -> 66
+2019-09-09 15:22:23.692  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=76, reply=66, backend=66, status=200}
+2019-09-09 15:22:23.744  INFO 22932 --- [io-8181-exec-30] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=76, reply=66, backend=66, status=200}
+2019-09-09 15:22:24.697  INFO 22932 --- [io-8181-exec-79] c.gauravg.controller.BackendController   : BACKEND-OK[S1]: 67 -> 67
+2019-09-09 15:22:24.698  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=81, reply=67, backend=67, status=200}
+2019-09-09 15:22:24.751  INFO 22932 --- [io-8181-exec-14] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=81, reply=67, backend=67, status=200}
+2019-09-09 15:22:25.700  INFO 22932 --- [io-8181-exec-90] c.gauravg.controller.BackendController   : BACKEND-OK[S2]: 68 -> 68
+2019-09-09 15:22:25.701  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=26, reply=68, backend=68, status=200}
+2019-09-09 15:22:25.756  INFO 22932 --- [nio-8181-exec-8] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=26, reply=68, backend=68, status=200}
+2019-09-09 15:22:26.703  INFO 22932 --- [io-8181-exec-16] c.gauravg.controller.BackendController   : BACKEND-OK[S3]: 69 -> 69
+2019-09-09 15:22:26.703  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=33, reply=69, backend=69, status=200}
+2019-09-09 15:22:26.756  INFO 22932 --- [io-8181-exec-69] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=33, reply=69, backend=69, status=200}
+2019-09-09 15:22:27.706  INFO 22932 --- [io-8181-exec-77] c.gauravg.controller.BackendController   : BACKEND-OK[S1]: 70 -> 70
+2019-09-09 15:22:27.706  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=67, reply=70, backend=70, status=200}
+2019-09-09 15:22:27.759  INFO 22932 --- [io-8181-exec-17] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=67, reply=70, backend=70, status=200}
+2019-09-09 15:22:28.710  INFO 22932 --- [io-8181-exec-62] c.gauravg.controller.BackendController   : BACKEND-OK[S2]: 71 -> 71
+2019-09-09 15:22:28.711  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=2, reply=71, backend=71, status=200}
+2019-09-09 15:22:28.804  INFO 22932 --- [io-8181-exec-32] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=2, reply=71, backend=71, status=200}
+2019-09-09 15:22:29.714  INFO 22932 --- [io-8181-exec-33] c.gauravg.controller.BackendController   : BACKEND-OK[S3]: 72 -> 72
+2019-09-09 15:22:29.714  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=34, reply=72, backend=72, status=200}
+2019-09-09 15:22:29.768  INFO 22932 --- [io-8181-exec-12] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=34, reply=72, backend=72, status=200}
+2019-09-09 15:22:30.718  INFO 22932 --- [io-8181-exec-66] c.gauravg.controller.BackendController   : BACKEND-OK[S1]: 73 -> 73
+2019-09-09 15:22:30.718  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=97, reply=73, backend=73, status=200}
+2019-09-09 15:22:30.770  INFO 22932 --- [io-8181-exec-35] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=97, reply=73, backend=73, status=200}
+2019-09-09 15:22:31.721  INFO 22932 --- [io-8181-exec-31] c.gauravg.controller.BackendController   : BACKEND-OK[S2]: 74 -> 74
+2019-09-09 15:22:31.722  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=43, reply=74, backend=74, status=200}
+2019-09-09 15:22:31.776  INFO 22932 --- [io-8181-exec-65] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=43, reply=74, backend=74, status=200}
+2019-09-09 15:22:32.724  INFO 22932 --- [io-8181-exec-87] c.gauravg.controller.BackendController   : BACKEND-OK[S3]: 75 -> 75
+2019-09-09 15:22:32.725  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=36, reply=75, backend=75, status=200}
+2019-09-09 15:22:32.777  INFO 22932 --- [io-8181-exec-86] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=36, reply=75, backend=75, status=200}
+2019-09-09 15:22:33.728  INFO 22932 --- [io-8181-exec-29] c.gauravg.controller.BackendController   : BACKEND-OK[S1]: 76 -> 76
+2019-09-09 15:22:33.730  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=75, reply=76, backend=76, status=200}
+2019-09-09 15:22:33.784  INFO 22932 --- [io-8181-exec-78] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=75, reply=76, backend=76, status=200}
+2019-09-09 15:22:34.734  INFO 22932 --- [io-8181-exec-68] c.gauravg.controller.BackendController   : BACKEND-OK[S2]: 77 -> 77
+2019-09-09 15:22:34.735  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=80, reply=77, backend=77, status=200}
+2019-09-09 15:22:34.787  INFO 22932 --- [io-8181-exec-34] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=80, reply=77, backend=77, status=200}
+2019-09-09 15:22:35.739  INFO 22932 --- [io-8181-exec-46] c.gauravg.controller.BackendController   : BACKEND-OK[S3]: 78 -> 78
+2019-09-09 15:22:35.739  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=4, reply=78, backend=78, status=200}
+2019-09-09 15:22:35.793  INFO 22932 --- [io-8181-exec-63] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=4, reply=78, backend=78, status=200}
+2019-09-09 15:22:36.743  INFO 22932 --- [io-8181-exec-84] c.gauravg.controller.BackendController   : BACKEND-OK[S1]: 79 -> 79
+2019-09-09 15:22:36.746  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=85, reply=79, backend=79, status=200}
+2019-09-09 15:22:36.798  INFO 22932 --- [io-8181-exec-58] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=85, reply=79, backend=79, status=200}
+2019-09-09 15:22:37.748  INFO 22932 --- [io-8181-exec-49] c.gauravg.controller.BackendController   : BACKEND-OK[S2]: 80 -> 80
+2019-09-09 15:22:37.749  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=91, reply=80, backend=80, status=200}
+2019-09-09 15:22:37.800  INFO 22932 --- [nio-8181-exec-7] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=91, reply=80, backend=80, status=200}
+2019-09-09 15:22:38.751  INFO 22932 --- [io-8181-exec-94] c.gauravg.controller.BackendController   : BACKEND-OK[S3]: 81 -> 81
+2019-09-09 15:22:38.752  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=50, reply=81, backend=81, status=200}
+2019-09-09 15:22:38.804  INFO 22932 --- [io-8181-exec-26] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=50, reply=81, backend=81, status=200}
+2019-09-09 15:22:39.755  INFO 22932 --- [o-8181-exec-100] c.gauravg.controller.BackendController   : BACKEND-OK[S1]: 82 -> 82
+2019-09-09 15:22:39.756  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=37, reply=82, backend=82, status=200}
+2019-09-09 15:22:39.810  INFO 22932 --- [io-8181-exec-96] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=37, reply=82, backend=82, status=200}
+2019-09-09 15:22:40.758  INFO 22932 --- [io-8181-exec-18] c.gauravg.controller.BackendController   : BACKEND-OK[S2]: 83 -> 83
+2019-09-09 15:22:40.758  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=19, reply=83, backend=83, status=200}
+2019-09-09 15:22:40.810  INFO 22932 --- [io-8181-exec-37] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=19, reply=83, backend=83, status=200}
+2019-09-09 15:22:41.761  INFO 22932 --- [io-8181-exec-73] c.gauravg.controller.BackendController   : BACKEND-OK[S3]: 84 -> 84
+2019-09-09 15:22:41.762  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=7, reply=84, backend=84, status=200}
+2019-09-09 15:22:41.815  INFO 22932 --- [io-8181-exec-97] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=7, reply=84, backend=84, status=200}
+2019-09-09 15:22:42.765  INFO 22932 --- [io-8181-exec-55] c.gauravg.controller.BackendController   : BACKEND-OK[S1]: 85 -> 85
+2019-09-09 15:22:42.766  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=27, reply=85, backend=85, status=200}
+2019-09-09 15:22:42.817  INFO 22932 --- [io-8181-exec-72] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=27, reply=85, backend=85, status=200}
+2019-09-09 15:22:43.769  INFO 22932 --- [io-8181-exec-60] c.gauravg.controller.BackendController   : BACKEND-OK[S2]: 86 -> 86
+2019-09-09 15:22:43.770  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=51, reply=86, backend=86, status=200}
+2019-09-09 15:22:43.837  INFO 22932 --- [io-8181-exec-41] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=51, reply=86, backend=86, status=200}
+2019-09-09 15:22:44.772  INFO 22932 --- [io-8181-exec-95] c.gauravg.controller.BackendController   : BACKEND-OK[S3]: 87 -> 87
+2019-09-09 15:22:44.772  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=54, reply=87, backend=87, status=200}
+2019-09-09 15:22:44.824  INFO 22932 --- [io-8181-exec-57] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=54, reply=87, backend=87, status=200}
+2019-09-09 15:22:45.776  INFO 22932 --- [io-8181-exec-50] c.gauravg.controller.BackendController   : BACKEND-OK[S1]: 88 -> 88
+2019-09-09 15:22:45.776  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=53, reply=88, backend=88, status=200}
+2019-09-09 15:22:45.829  INFO 22932 --- [io-8181-exec-48] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=53, reply=88, backend=88, status=200}
+2019-09-09 15:22:46.781  INFO 22932 --- [io-8181-exec-83] c.gauravg.controller.BackendController   : BACKEND-OK[S2]: 89 -> 89
+2019-09-09 15:22:46.782  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=69, reply=89, backend=89, status=200}
+2019-09-09 15:22:46.834  INFO 22932 --- [io-8181-exec-39] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=69, reply=89, backend=89, status=200}
+2019-09-09 15:22:47.785  INFO 22932 --- [io-8181-exec-59] c.gauravg.controller.BackendController   : BACKEND-OK[S3]: 90 -> 90
+2019-09-09 15:22:47.785  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=74, reply=90, backend=90, status=200}
+2019-09-09 15:22:47.838  INFO 22932 --- [io-8181-exec-38] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=74, reply=90, backend=90, status=200}
+2019-09-09 15:22:48.794  INFO 22932 --- [nio-8181-exec-5] c.gauravg.controller.BackendController   : BACKEND-OK[S1]: 91 -> 91
+2019-09-09 15:22:48.795  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=68, reply=91, backend=91, status=200}
+2019-09-09 15:22:48.850  INFO 22932 --- [io-8181-exec-61] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=68, reply=91, backend=91, status=200}
+2019-09-09 15:22:49.798  INFO 22932 --- [io-8181-exec-88] c.gauravg.controller.BackendController   : BACKEND-OK[S2]: 92 -> 92
+2019-09-09 15:22:49.798  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=66, reply=92, backend=92, status=200}
+2019-09-09 15:22:49.855  INFO 22932 --- [io-8181-exec-82] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=66, reply=92, backend=92, status=200}
+2019-09-09 15:22:50.802  INFO 22932 --- [o-8181-exec-102] c.gauravg.controller.BackendController   : BACKEND-OK[S3]: 93 -> 93
+2019-09-09 15:22:50.803  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=40, reply=93, backend=93, status=200}
+2019-09-09 15:22:50.857  INFO 22932 --- [io-8181-exec-54] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=40, reply=93, backend=93, status=200}
+2019-09-09 15:22:51.806  INFO 22932 --- [io-8181-exec-98] c.gauravg.controller.BackendController   : BACKEND-OK[S1]: 94 -> 94
+2019-09-09 15:22:51.807  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=11, reply=94, backend=94, status=200}
+2019-09-09 15:22:51.861  INFO 22932 --- [io-8181-exec-51] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=11, reply=94, backend=94, status=200}
+2019-09-09 15:22:52.809  INFO 22932 --- [io-8181-exec-25] c.gauravg.controller.BackendController   : BACKEND-OK[S2]: 95 -> 95
+2019-09-09 15:22:52.809  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=31, reply=95, backend=95, status=200}
+2019-09-09 15:22:52.863  INFO 22932 --- [io-8181-exec-75] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=31, reply=95, backend=95, status=200}
+2019-09-09 15:22:53.813  INFO 22932 --- [io-8181-exec-21] c.gauravg.controller.BackendController   : BACKEND-OK[S3]: 96 -> 96
+2019-09-09 15:22:53.813  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=28, reply=96, backend=96, status=200}
+2019-09-09 15:22:53.868  INFO 22932 --- [io-8181-exec-74] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=28, reply=96, backend=96, status=200}
+2019-09-09 15:22:54.817  INFO 22932 --- [io-8181-exec-19] c.gauravg.controller.BackendController   : BACKEND-OK[S1]: 97 -> 97
+2019-09-09 15:22:54.818  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=20, reply=97, backend=97, status=200}
+2019-09-09 15:22:54.871  INFO 22932 --- [io-8181-exec-42] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=20, reply=97, backend=97, status=200}
+2019-09-09 15:22:55.820  INFO 22932 --- [io-8181-exec-70] c.gauravg.controller.BackendController   : BACKEND-OK[S2]: 98 -> 98
+2019-09-09 15:22:55.820  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=64, reply=98, backend=98, status=200}
+2019-09-09 15:22:55.874  INFO 22932 --- [io-8181-exec-52] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=64, reply=98, backend=98, status=200}
+2019-09-09 15:22:56.824  INFO 22932 --- [nio-8181-exec-9] c.gauravg.controller.BackendController   : BACKEND-OK[S3]: 99 -> 99
+2019-09-09 15:22:56.825  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=46, reply=99, backend=99, status=200}
+2019-09-09 15:22:56.876  INFO 22932 --- [io-8181-exec-36] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=46, reply=99, backend=99, status=200}
+2019-09-09 15:22:57.828  INFO 22932 --- [io-8181-exec-89] c.gauravg.controller.BackendController   : BACKEND-OK[S1]: 100 -> 100
+2019-09-09 15:22:57.828  INFO 22932 --- [ntainer#0-0-C-1] c.g.consumer.ReplyingKafkaConsumer       : REPLY-OK: Model{value=1, request=14, reply=100, backend=100, status=200}
+2019-09-09 15:22:57.880  INFO 22932 --- [nio-8181-exec-1] c.gauravg.controller.RequestController   : REQUEST-Completed: Model{value=1, request=14, reply=100, backend=100, status=200}
