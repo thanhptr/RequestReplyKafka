@@ -3,19 +3,16 @@ package com.gauravg.controller;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.atomic.AtomicInteger;
 
+import com.gauravg.se.callistaenterprise.kafka.CompletableFutureReplyingKafkaTemplate;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.clients.producer.ProducerRecord;
-import org.apache.kafka.common.header.internals.RecordHeader;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.kafka.requestreply.ReplyingKafkaTemplate;
 import org.springframework.kafka.requestreply.RequestReplyFuture;
-import org.springframework.kafka.support.KafkaHeaders;
 import org.springframework.kafka.support.SendResult;
 import org.springframework.web.bind.annotation.*;
 
@@ -28,7 +25,7 @@ public class RequestController {
 	private static final AtomicInteger counter = new AtomicInteger();
 
 	@Autowired
-	ReplyingKafkaTemplate<String, Model,Model> kafkaTemplate;
+	private CompletableFutureReplyingKafkaTemplate<String, Model, Model> replyKafkaTemplate;
 
 	@Value("${kafka.topic.request-topic}")
 	String requestTopic;
@@ -44,12 +41,8 @@ public class RequestController {
 		}
 		request.setRequest(counter.incrementAndGet());
 
-		// create producer record
-		ProducerRecord<String, Model> record = new ProducerRecord<String, Model>(requestTopic, request);
-		// set reply topic in header
-		record.headers().add(new RecordHeader(KafkaHeaders.REPLY_TOPIC, requestReplyTopic.getBytes()));
-		// post in kafka topic
-		RequestReplyFuture<String, Model, Model> sendAndReceive = kafkaTemplate.sendAndReceive(record);
+		// create producer record, set reply topic in header & post in kafka topic
+		RequestReplyFuture<String, Model, Model> sendAndReceive = replyKafkaTemplate.sendAndReceive(new ProducerRecord<>(requestTopic, request));
 
 		// confirm if producer produced successfully
 		SendResult<String, Model> sendResult = sendAndReceive.getSendFuture().get();

@@ -3,6 +3,7 @@ package com.gauravg.config;
 import java.util.HashMap;
 import java.util.Map;
 
+import com.gauravg.se.callistaenterprise.kafka.CompletableFutureReplyingKafkaTemplate;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;
@@ -98,8 +99,8 @@ public class KafkaConfig {
 	}
 
 	@Bean
-	public ReplyingKafkaTemplate<String, Model, Model> replyKafkaTemplate(ProducerFactory<String, Model> pf, KafkaMessageListenerContainer<String, Model> container){
-		ReplyingKafkaTemplate<String, Model, Model> replyTemplate = new ReplyingKafkaTemplate<>(pf, container);
+	public CompletableFutureReplyingKafkaTemplate<String, Model, Model> replyKafkaTemplate(ProducerFactory<String, Model> pf, KafkaMessageListenerContainer<String, Model> container){
+		CompletableFutureReplyingKafkaTemplate<String, Model, Model> replyTemplate = new CompletableFutureReplyingKafkaTemplate<>(pf, container);
 		replyTemplate.setReplyTimeout(10 * 60000);
 		return replyTemplate;
 	}
@@ -120,6 +121,7 @@ public class KafkaConfig {
 		ConcurrentKafkaListenerContainerFactory<String, Model> factory = new ConcurrentKafkaListenerContainerFactory<>();
 		factory.setConsumerFactory(consumerFactory());
 		factory.setReplyTemplate(kafkaTemplate());
+		factory.setConcurrency(3);
 		return factory;
 	}
 }

@@ -5,8 +5,8 @@ import http from 'k6/http';
 
 // SIMPLE PEAK
 export let options = {
-  vus: 100,
-  iterations: 100
+  vus: 10,
+  iterations: 10
 };
 
 // export let options = {
