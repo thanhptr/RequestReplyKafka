@@ -38,6 +38,37 @@ public class KafkaConfig {
 	@Value("${kafka.consumergroup}")
 	private String consumerGroup;
 
+	@Value("${kafka.security.protocol}")
+	private String securityProtocol;
+
+	@Value("${kafka.ssl-truststore-location}")
+	private String sslTruststoreLocation;
+
+	@Value("${kafka.ssl-truststore-password}")
+	private String sslTruststorePassword;
+
+	@Value("${kafka.ssl-key-password}")
+	private String sslKeyPassword;
+
+	@Value("${kafka.ssl-keystore-password}")
+	private String sslKeystorePassword;
+
+	@Value("${kafka.ssl-keystore-location}")
+	private String sslKeystoreLocation;
+
+	private Map<String, Object> loadSslConfigs(Map<String, Object> props) {
+		if (securityProtocol != null && securityProtocol.equals("SSL")) {
+			props.put("security.protocol", securityProtocol);
+			props.put("ssl.truststore.location", sslTruststoreLocation);
+			props.put("ssl.truststore.password", sslTruststorePassword);
+
+			props.put("ssl.key.password", sslKeyPassword);
+			props.put("ssl.keystore.password", sslKeystorePassword);
+			props.put("ssl.keystore.location", sslKeystoreLocation);
+		}
+		return props;
+	}
+
 	@Bean
 	public Map<String, Object> producerConfigs() {
 		Map<String, Object> props = new HashMap<>();
@@ -45,15 +76,15 @@ public class KafkaConfig {
 		props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapServers);
 		props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
 		props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, JsonSerializer.class);
-		return props;
+		return loadSslConfigs(props);
 	}
 
 	@Bean
 	public Map<String, Object> consumerConfigs() {
 		Map<String, Object> props = new HashMap<>();
 		props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapServers);
-		props.put(ConsumerConfig.GROUP_ID_CONFIG, "helloworld");
-		return props;
+		props.put(ConsumerConfig.GROUP_ID_CONFIG, consumerGroup);
+		return loadSslConfigs(props);
 	}
 
 	@Bean

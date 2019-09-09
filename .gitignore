@@ -76,3 +76,4 @@ fabric.properties
 /nginx/logs/*.log
 /nginx/logs/*.pid
 /target
+/src/main/resources/application.properties

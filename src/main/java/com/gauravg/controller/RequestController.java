@@ -57,7 +57,7 @@ public class RequestController {
 		//print published all headers
 		StringBuilder requestHeaders = new StringBuilder();
 		sendResult.getProducerRecord().headers().forEach(header -> requestHeaders.append(header.key()).append(":").append(header.value().toString()).append(" |"));
-		logger.info("REQUEST-Started: {} {}", requestHeaders, request);
+		logger.info("REQUEST-Started: {} {}", request, requestHeaders);
 
 		// get consumer record
 		ConsumerRecord<String, Model> response = sendAndReceive.get();
