@@ -1,0 +1,39 @@
+$ k6 run test-async.js
+
+          /\      |‾‾|  /‾‾/  /‾/
+     /\  /  \     |  |_/  /  / /
+    /  \/    \    |      |  /  ‾‾\
+   /          \   |  |‾\  \ | (_) |
+  / __________ \  |__|  \__\ \___/ .io
+
+  execution: local-
+     output: -
+     script: test-async.js
+
+    duration: -,    iterations: 3000
+         vus: 100, max: 100
+
+    done [==========================================================] 3000 / 3000
+
+    ✓ OK
+
+    checks.....................: 100.00% ✓ 3000  ✗ 0
+    data_received..............: 675 kB  671 B/s
+    data_sent..................: 285 kB  283 B/s
+    http_req_blocked...........: avg=180.47µs min=0s    med=0s     max=29ms    p(90)=0s       p(95)=0s
+
+    http_req_connecting........: avg=160.79µs min=0s    med=0s     max=27ms    p(90)=0s       p(95)=0s
+
+    http_req_duration..........: avg=32.93s   min=1.13s med=33.37s max=35.07s  p(90)=34.21s   p(95)=34.33s
+    http_req_receiving.........: avg=156.81µs min=0s    med=0s     max=1.09ms  p(90)=747.86µs p(95)=998.4µs
+    http_req_sending...........: avg=28.31µs  min=0s    med=0s     max=25.95ms p(90)=0s       p(95)=59.03µs
+    http_req_tls_handshaking...: avg=0s       min=0s    med=0s     max=0s      p(90)=0s       p(95)=0s
+
+    http_req_waiting...........: avg=32.93s   min=1.13s med=33.37s max=35.07s  p(90)=34.21s   p(95)=34.33s
+    http_reqs..................: 3000    2.984327/s
+    iteration_duration.........: avg=32.93s   min=1.13s med=33.37s max=35.07s  p(90)=34.21s   p(95)=34.33s
+    iterations.................: 3000    2.984327/s
+    vus........................: 100     min=100 max=100
+    vus_max....................: 100     min=100 max=100
+	
+	

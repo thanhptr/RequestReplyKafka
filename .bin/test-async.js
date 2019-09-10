@@ -4,16 +4,16 @@ import http from 'k6/http';
 
 export let options = {
   // vus: 100,
-  // iterations: 100 * 10
-  vus: 10,
-  iterations: 10
+  // iterations: 100 * 30
+  vus: 100,
+  iterations: 100
 };
 
 export default function() {
   let params = {
     timeout: 10 * 60 * 1000
   };  
-  let res = http.get("http://localhost:2001/request?value=1", params);
+  let res = http.get("http://127.0.0.1:2000/request?value=1", params);
   check(res, {
       "OK": r => r.status === 200
   });
